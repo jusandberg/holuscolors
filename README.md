@@ -1,6 +1,8 @@
-This repo is a test copy of my website redesign (hōlus.). The attached
-holus-redesign.zip has the full site. Unzip it into the repo root, commit and
-push, then turn on GitHub Pages (main, root) and check the link works.
+This repo (holuscolors) is a test copy of my website redesign (hōlus.).
+holus-redesign.zip in the repo has the full site. Unzip it so the site files sit
+at the repo root (not inside a holus-redesign folder), delete the zip, commit
+and push. Then turn on GitHub Pages (main, root) and check
+jusandberg.github.io/holuscolors works.
 
 The live site is the separate holus-nutrition repo. Don't change it.
 
