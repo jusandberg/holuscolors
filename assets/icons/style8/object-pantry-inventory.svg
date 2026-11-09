@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200"><defs>
+<linearGradient id="ink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c858d"/><stop offset="1" stop-color="#22303d"/></linearGradient>
+<linearGradient id="sage" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#aeb9aa"/><stop offset="1" stop-color="#617360"/></linearGradient>
+<linearGradient id="pale" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f8f8"/><stop offset="1" stop-color="#dce3e5"/></linearGradient>
+<linearGradient id="terra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfbfba"/><stop offset="1" stop-color="#b77f79"/></linearGradient>
+<linearGradient id="mustard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2d3ad"/><stop offset="1" stop-color="#b79d64"/></linearGradient>
+<linearGradient id="plum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9becb"/><stop offset="1" stop-color="#8f7d94"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c2d0d6"/><stop offset="1" stop-color="#7f98a4"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf7"/><stop offset="1" stop-color="#e7e1d3"/></linearGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#22303d" flood-opacity=".13"/></filter>
+</defs><g filter="url(#soft)"><rect x="43" y="29" width="154" height="146" rx="18" fill="url(#cream)" stroke="#7c858d" stroke-width="2"/><path d="M54 79h132M54 127h132" stroke="#465745" stroke-width="5"/></g><rect x="67" y="46" width="31" height="30" rx="7" fill="url(#terra)"/><rect x="112" y="40" width="24" height="36" rx="7" fill="url(#sage)"/><rect x="148" y="49" width="25" height="27" rx="7" fill="url(#blue)"/><rect x="61" y="93" width="40" height="30" rx="8" fill="url(#mustard)"/><rect x="116" y="88" width="27" height="35" rx="7" fill="url(#plum)"/><rect x="157" y="96" width="22" height="27" rx="7" fill="url(#sage)"/><path d="M70 145h95" stroke="#b88782" stroke-width="7" stroke-linecap="round"/></svg>

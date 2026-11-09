@@ -1,14 +1,14 @@
 {
   "name": "Hōlus Style 8 Icon Library",
   "version": 1,
-  "total": 222,
+  "total": 232,
   "categories": {
     "Decorations": 16,
     "Drinks": 10,
     "Food": 36,
     "Fruit": 24,
     "Herbs": 4,
-    "Objects": 110,
+    "Objects": 120,
     "Other": 1,
     "Vegetables": 21
   },
@@ -16,7 +16,7 @@
     "original": 101,
     "expansion-30": 30,
     "expansion-50": 50,
-    "objects-to-100": 41
+    "objects-to-100": 51
   },
   "icons": [
     {
@@ -596,6 +596,12 @@
       "collection": "objects-to-100"
     },
     {
+      "path": "object-batch-meal-prep.svg",
+      "filename": "object-batch-meal-prep.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
       "path": "object-bathroom-scale.svg",
       "filename": "object-bathroom-scale.svg",
       "category": "Objects",
@@ -788,6 +794,18 @@
       "collection": "expansion-50"
     },
     {
+      "path": "object-food-label-scanner.svg",
+      "filename": "object-food-label-scanner.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-food-prep-board.svg",
+      "filename": "object-food-prep-board.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
       "path": "object-fridge.svg",
       "filename": "object-fridge.svg",
       "category": "Objects",
@@ -804,6 +822,12 @@
       "filename": "object-grocery-bag.svg",
       "category": "Objects",
       "collection": "expansion-30"
+    },
+    {
+      "path": "object-grocery-cart.svg",
+      "filename": "object-grocery-cart.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
     },
     {
       "path": "object-gut-microbiome.svg",
@@ -926,6 +950,12 @@
       "collection": "expansion-50"
     },
     {
+      "path": "object-macro-tracker.svg",
+      "filename": "object-macro-tracker.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
       "path": "object-magnifier.svg",
       "filename": "object-magnifier.svg",
       "category": "Objects",
@@ -1028,6 +1058,18 @@
       "collection": "expansion-30"
     },
     {
+      "path": "object-nutrition-facts.svg",
+      "filename": "object-nutrition-facts.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-pantry-inventory.svg",
+      "filename": "object-pantry-inventory.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
       "path": "object-phone.svg",
       "filename": "object-phone.svg",
       "category": "Objects",
@@ -1076,6 +1118,12 @@
       "collection": "objects-to-100"
     },
     {
+      "path": "object-recipe-builder.svg",
+      "filename": "object-recipe-builder.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
       "path": "object-recipe-card.svg",
       "filename": "object-recipe-card.svg",
       "category": "Objects",
@@ -1088,10 +1136,22 @@
       "collection": "expansion-30"
     },
     {
+      "path": "object-serving-guide.svg",
+      "filename": "object-serving-guide.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
       "path": "object-shaker.svg",
       "filename": "object-shaker.svg",
       "category": "Objects",
       "collection": "original"
+    },
+    {
+      "path": "object-shopping-basket-list.svg",
+      "filename": "object-shopping-basket-list.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
     },
     {
       "path": "object-shopping-list.svg",
