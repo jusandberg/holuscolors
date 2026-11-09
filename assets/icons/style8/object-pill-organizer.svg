@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200"><defs>
+  <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c858d"/><stop offset="1" stop-color="#22303d"/></linearGradient>
+  <linearGradient id="sage" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#939e92"/><stop offset="1" stop-color="#465745"/></linearGradient>
+  <linearGradient id="pale" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f7"/><stop offset="1" stop-color="#dae0e3"/></linearGradient>
+  <linearGradient id="terra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcbcb9"/><stop offset="1" stop-color="#b88782"/></linearGradient>
+  <linearGradient id="mustard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ddd0af"/><stop offset="1" stop-color="#bba573"/></linearGradient>
+  <linearGradient id="plum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4b9c7"/><stop offset="1" stop-color="#938298"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9c8d0"/><stop offset="1" stop-color="#8299a5"/></linearGradient>
+  <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf8f1"/><stop offset="1" stop-color="#e5e1d4"/></linearGradient>
+</defs><rect x="35" y="56" width="170" height="92" rx="18" fill="url(#pale)" stroke="#979b9d" stroke-width="1.75"/><g><rect x="43" y="64" width="21" height="76" rx="8" fill="url(#terra)"/><rect x="67" y="64" width="21" height="76" rx="8" fill="url(#mustard)"/><rect x="91" y="64" width="21" height="76" rx="8" fill="url(#sage)"/><rect x="115" y="64" width="21" height="76" rx="8" fill="url(#blue)"/><rect x="139" y="64" width="21" height="76" rx="8" fill="url(#plum)"/><rect x="163" y="64" width="34" height="76" rx="8" fill="url(#cream)"/></g><g fill="#fff" opacity=".75"><circle cx="54" cy="104" r="5"/><circle cx="78" cy="91" r="5"/><circle cx="102" cy="112" r="5"/><circle cx="126" cy="94" r="5"/><circle cx="150" cy="111" r="5"/><circle cx="180" cy="98" r="5"/></g></svg>

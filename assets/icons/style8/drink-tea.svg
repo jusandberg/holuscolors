@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200"><defs><linearGradient id="s8drinktea1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f5f5f7"/><stop offset="1" stop-color="#e0e0e3"/></linearGradient><linearGradient id="s8drinktea2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c858d"/><stop offset="1" stop-color="#22303d"/></linearGradient><linearGradient id="s8drinktea3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#939e92"/><stop offset="1" stop-color="#465745"/></linearGradient><linearGradient id="s8drinktea4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f8f5ee"/><stop offset="1" stop-color="#e5e1d4"/></linearGradient></defs>
+<ellipse cx="116" cy="172" rx="70" ry="10" fill="url(#s8drinktea1)" stroke="#DFE4DE" stroke-width="2"/>
+<path d="M66 92 H166 V120 C166 150 144 168 116 168 C88 168 66 150 66 120 Z" fill="url(#s8drinktea2)"/>
+<path d="M166 104 C190 104 192 140 166 142" stroke="#313c2f" stroke-width="4.0" fill="none" stroke-linecap="round"/>
+<ellipse cx="116" cy="92" rx="50" ry="9" fill="url(#s8drinktea3)"/>
+<g stroke="#f4efe2" stroke-width="4" fill="none" stroke-linecap="round"><path d="M96 74 C88 62 104 54 96 40"/><path d="M118 70 C110 56 126 48 118 30"/><path d="M140 74 C132 62 148 54 140 42"/></g>
+<rect x="84" y="112" width="20" height="14" rx="3" fill="url(#s8drinktea4)"/><path d="M94 112 V96" stroke="#f4efe2" stroke-width="1.5"/></svg>

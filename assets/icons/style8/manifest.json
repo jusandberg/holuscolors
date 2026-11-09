@@ -1,0 +1,1355 @@
+{
+  "name": "Hōlus Style 8 Icon Library",
+  "version": 1,
+  "total": 222,
+  "categories": {
+    "Decorations": 16,
+    "Drinks": 10,
+    "Food": 36,
+    "Fruit": 24,
+    "Herbs": 4,
+    "Objects": 110,
+    "Other": 1,
+    "Vegetables": 21
+  },
+  "collections": {
+    "original": 101,
+    "expansion-30": 30,
+    "expansion-50": 50,
+    "objects-to-100": 41
+  },
+  "icons": [
+    {
+      "path": "decorations/float-almond.svg",
+      "filename": "float-almond.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-berries.svg",
+      "filename": "float-berries.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-carrot.svg",
+      "filename": "float-carrot.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-cherries.svg",
+      "filename": "float-cherries.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-fig.svg",
+      "filename": "float-fig.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-grapes-light.svg",
+      "filename": "float-grapes-light.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-leaf-light.svg",
+      "filename": "float-leaf-light.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-leaf.svg",
+      "filename": "float-leaf.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-lemon.svg",
+      "filename": "float-lemon.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-mint-light.svg",
+      "filename": "float-mint-light.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-mint.svg",
+      "filename": "float-mint.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-peas.svg",
+      "filename": "float-peas.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-pineapple.svg",
+      "filename": "float-pineapple.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-sprig.svg",
+      "filename": "float-sprig.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-strawberry.svg",
+      "filename": "float-strawberry.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "decorations/float-watermelon.svg",
+      "filename": "float-watermelon.svg",
+      "category": "Decorations",
+      "collection": "original"
+    },
+    {
+      "path": "drink-coffee.svg",
+      "filename": "drink-coffee.svg",
+      "category": "Drinks",
+      "collection": "original"
+    },
+    {
+      "path": "drink-herbal-infusion.svg",
+      "filename": "drink-herbal-infusion.svg",
+      "category": "Drinks",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "drink-lemon-water.svg",
+      "filename": "drink-lemon-water.svg",
+      "category": "Drinks",
+      "collection": "original"
+    },
+    {
+      "path": "drink-matcha.svg",
+      "filename": "drink-matcha.svg",
+      "category": "Drinks",
+      "collection": "original"
+    },
+    {
+      "path": "drink-milk.svg",
+      "filename": "drink-milk.svg",
+      "category": "Drinks",
+      "collection": "original"
+    },
+    {
+      "path": "drink-orange-juice.svg",
+      "filename": "drink-orange-juice.svg",
+      "category": "Drinks",
+      "collection": "original"
+    },
+    {
+      "path": "drink-smoothie.svg",
+      "filename": "drink-smoothie.svg",
+      "category": "Drinks",
+      "collection": "original"
+    },
+    {
+      "path": "drink-sparkling.svg",
+      "filename": "drink-sparkling.svg",
+      "category": "Drinks",
+      "collection": "original"
+    },
+    {
+      "path": "drink-tea.svg",
+      "filename": "drink-tea.svg",
+      "category": "Drinks",
+      "collection": "original"
+    },
+    {
+      "path": "drink-teapot.svg",
+      "filename": "drink-teapot.svg",
+      "category": "Drinks",
+      "collection": "original"
+    },
+    {
+      "path": "food-almond.svg",
+      "filename": "food-almond.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-beans-bowl.svg",
+      "filename": "food-beans-bowl.svg",
+      "category": "Food",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "food-bread.svg",
+      "filename": "food-bread.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-cheese.svg",
+      "filename": "food-cheese.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-chia-pudding.svg",
+      "filename": "food-chia-pudding.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-chickpeas.svg",
+      "filename": "food-chickpeas.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-cottage-cheese.svg",
+      "filename": "food-cottage-cheese.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-crackers.svg",
+      "filename": "food-crackers.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-dark-chocolate.svg",
+      "filename": "food-dark-chocolate.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-edamame.svg",
+      "filename": "food-edamame.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-egg.svg",
+      "filename": "food-egg.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-flax-seeds.svg",
+      "filename": "food-flax-seeds.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-granola.svg",
+      "filename": "food-granola.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-honey.svg",
+      "filename": "food-honey.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-hummus.svg",
+      "filename": "food-hummus.svg",
+      "category": "Food",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "food-kefir.svg",
+      "filename": "food-kefir.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-lentil-bowl.svg",
+      "filename": "food-lentil-bowl.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-nut-butter-toast.svg",
+      "filename": "food-nut-butter-toast.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-nuts-mix.svg",
+      "filename": "food-nuts-mix.svg",
+      "category": "Food",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "food-oat-bowl.svg",
+      "filename": "food-oat-bowl.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-olive-oil.svg",
+      "filename": "food-olive-oil.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-pasta.svg",
+      "filename": "food-pasta.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-peanut-butter.svg",
+      "filename": "food-peanut-butter.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-plate.svg",
+      "filename": "food-plate.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-protein-bowl.svg",
+      "filename": "food-protein-bowl.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-quinoa-bowl.svg",
+      "filename": "food-quinoa-bowl.svg",
+      "category": "Food",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "food-rice-bowl.svg",
+      "filename": "food-rice-bowl.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-salmon.svg",
+      "filename": "food-salmon.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-sandwich.svg",
+      "filename": "food-sandwich.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-seeds.svg",
+      "filename": "food-seeds.svg",
+      "category": "Food",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "food-soup.svg",
+      "filename": "food-soup.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-tempeh.svg",
+      "filename": "food-tempeh.svg",
+      "category": "Food",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "food-tofu.svg",
+      "filename": "food-tofu.svg",
+      "category": "Food",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "food-walnuts.svg",
+      "filename": "food-walnuts.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-wheat.svg",
+      "filename": "food-wheat.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "food-yogurt.svg",
+      "filename": "food-yogurt.svg",
+      "category": "Food",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-apple.svg",
+      "filename": "fruit-apple.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-apricot.svg",
+      "filename": "fruit-apricot.svg",
+      "category": "Fruit",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "fruit-avocado.svg",
+      "filename": "fruit-avocado.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-banana.svg",
+      "filename": "fruit-banana.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-berries.svg",
+      "filename": "fruit-berries.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-blackberries.svg",
+      "filename": "fruit-blackberries.svg",
+      "category": "Fruit",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "fruit-blueberries.svg",
+      "filename": "fruit-blueberries.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-cantaloupe.svg",
+      "filename": "fruit-cantaloupe.svg",
+      "category": "Fruit",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "fruit-cherries.svg",
+      "filename": "fruit-cherries.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-fig.svg",
+      "filename": "fruit-fig.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-grapes.svg",
+      "filename": "fruit-grapes.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-kiwi.svg",
+      "filename": "fruit-kiwi.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-lemon-slice.svg",
+      "filename": "fruit-lemon-slice.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-lemon-sprig.svg",
+      "filename": "fruit-lemon-sprig.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-mango.svg",
+      "filename": "fruit-mango.svg",
+      "category": "Fruit",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "fruit-orange.svg",
+      "filename": "fruit-orange.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-peach.svg",
+      "filename": "fruit-peach.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-pear.svg",
+      "filename": "fruit-pear.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-pineapple.svg",
+      "filename": "fruit-pineapple.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-plum.svg",
+      "filename": "fruit-plum.svg",
+      "category": "Fruit",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "fruit-pomegranate.svg",
+      "filename": "fruit-pomegranate.svg",
+      "category": "Fruit",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "fruit-raspberries.svg",
+      "filename": "fruit-raspberries.svg",
+      "category": "Fruit",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "fruit-strawberry.svg",
+      "filename": "fruit-strawberry.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "fruit-watermelon.svg",
+      "filename": "fruit-watermelon.svg",
+      "category": "Fruit",
+      "collection": "original"
+    },
+    {
+      "path": "herb-leaf-pale.svg",
+      "filename": "herb-leaf-pale.svg",
+      "category": "Herbs",
+      "collection": "original"
+    },
+    {
+      "path": "herb-leaf.svg",
+      "filename": "herb-leaf.svg",
+      "category": "Herbs",
+      "collection": "original"
+    },
+    {
+      "path": "herb-mint.svg",
+      "filename": "herb-mint.svg",
+      "category": "Herbs",
+      "collection": "original"
+    },
+    {
+      "path": "herb-sprig.svg",
+      "filename": "herb-sprig.svg",
+      "category": "Herbs",
+      "collection": "original"
+    },
+    {
+      "path": "object-acupressure-mat.svg",
+      "filename": "object-acupressure-mat.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-air-purifier.svg",
+      "filename": "object-air-purifier.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-ankle-weights.svg",
+      "filename": "object-ankle-weights.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-appointment-card.svg",
+      "filename": "object-appointment-card.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-atp-energy.svg",
+      "filename": "object-atp-energy.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-bandage-roll.svg",
+      "filename": "object-bandage-roll.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-bathroom-scale.svg",
+      "filename": "object-bathroom-scale.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-bed.svg",
+      "filename": "object-bed.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-bike.svg",
+      "filename": "object-bike.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-blender.svg",
+      "filename": "object-blender.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-blood-pressure-cuff.svg",
+      "filename": "object-blood-pressure-cuff.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-body-brush.svg",
+      "filename": "object-body-brush.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-bone.svg",
+      "filename": "object-bone.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-bottle.svg",
+      "filename": "object-bottle.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-bowl.svg",
+      "filename": "object-bowl.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-brain.svg",
+      "filename": "object-brain.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-breathing-trainer.svg",
+      "filename": "object-breathing-trainer.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-bubbles.svg",
+      "filename": "object-bubbles.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-calendar.svg",
+      "filename": "object-calendar.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-cell.svg",
+      "filename": "object-cell.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-checklist.svg",
+      "filename": "object-checklist.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-clock.svg",
+      "filename": "object-clock.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-compass.svg",
+      "filename": "object-compass.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-compression-socks.svg",
+      "filename": "object-compression-socks.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-cooking-pot.svg",
+      "filename": "object-cooking-pot.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-cutlery.svg",
+      "filename": "object-cutlery.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-dental-floss.svg",
+      "filename": "object-dental-floss.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-dna.svg",
+      "filename": "object-dna.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-dropper.svg",
+      "filename": "object-dropper.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-dumbbell.svg",
+      "filename": "object-dumbbell.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-electric-toothbrush.svg",
+      "filename": "object-electric-toothbrush.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-energy.svg",
+      "filename": "object-energy.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-eye-drops.svg",
+      "filename": "object-eye-drops.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-face-mask.svg",
+      "filename": "object-face-mask.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-first-aid-kit.svg",
+      "filename": "object-first-aid-kit.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-flower.svg",
+      "filename": "object-flower.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-foam-roller.svg",
+      "filename": "object-foam-roller.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-food-diary.svg",
+      "filename": "object-food-diary.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-fridge.svg",
+      "filename": "object-fridge.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-glucose-meter.svg",
+      "filename": "object-glucose-meter.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-grocery-bag.svg",
+      "filename": "object-grocery-bag.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-gut-microbiome.svg",
+      "filename": "object-gut-microbiome.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-hand-grip.svg",
+      "filename": "object-hand-grip.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-headphones.svg",
+      "filename": "object-headphones.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-hearing-aid.svg",
+      "filename": "object-hearing-aid.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-heart-pulse.svg",
+      "filename": "object-heart-pulse.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-heating-pad.svg",
+      "filename": "object-heating-pad.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-hydration-tracker.svg",
+      "filename": "object-hydration-tracker.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-ice-pack.svg",
+      "filename": "object-ice-pack.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-immune-defense.svg",
+      "filename": "object-immune-defense.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-inhaler.svg",
+      "filename": "object-inhaler.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-intestine.svg",
+      "filename": "object-intestine.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-jar.svg",
+      "filename": "object-jar.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-jumprope.svg",
+      "filename": "object-jumprope.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-kettlebell.svg",
+      "filename": "object-kettlebell.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-kitchen-scale.svg",
+      "filename": "object-kitchen-scale.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-lab.svg",
+      "filename": "object-lab.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-liver.svg",
+      "filename": "object-liver.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-lumbar-cushion.svg",
+      "filename": "object-lumbar-cushion.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-lunchbox.svg",
+      "filename": "object-lunchbox.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-lungs.svg",
+      "filename": "object-lungs.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-magnifier.svg",
+      "filename": "object-magnifier.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-massage-ball.svg",
+      "filename": "object-massage-ball.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-meal-container.svg",
+      "filename": "object-meal-container.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-meal-planner-board.svg",
+      "filename": "object-meal-planner-board.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-measuring-tape.svg",
+      "filename": "object-measuring-tape.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-medical-chart.svg",
+      "filename": "object-medical-chart.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-medication-blister.svg",
+      "filename": "object-medication-blister.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-meditation-cushion.svg",
+      "filename": "object-meditation-cushion.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-metabolism.svg",
+      "filename": "object-metabolism.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-microscope.svg",
+      "filename": "object-microscope.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-mitochondrion.svg",
+      "filename": "object-mitochondrion.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-mortar-pestle.svg",
+      "filename": "object-mortar-pestle.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-mug.svg",
+      "filename": "object-mug.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-muscle-arm.svg",
+      "filename": "object-muscle-arm.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-neuron.svg",
+      "filename": "object-neuron.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-notebook.svg",
+      "filename": "object-notebook.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-nutrition-book.svg",
+      "filename": "object-nutrition-book.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-phone.svg",
+      "filename": "object-phone.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-pill-crusher.svg",
+      "filename": "object-pill-crusher.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-pill-organizer.svg",
+      "filename": "object-pill-organizer.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-pillow.svg",
+      "filename": "object-pillow.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-plate.svg",
+      "filename": "object-plate.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-portion-plate.svg",
+      "filename": "object-portion-plate.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-posture-corrector.svg",
+      "filename": "object-posture-corrector.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-pulse-oximeter.svg",
+      "filename": "object-pulse-oximeter.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-recipe-card.svg",
+      "filename": "object-recipe-card.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-resistance-band.svg",
+      "filename": "object-resistance-band.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-shaker.svg",
+      "filename": "object-shaker.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-shopping-list.svg",
+      "filename": "object-shopping-list.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-signpost.svg",
+      "filename": "object-signpost.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-sleep-mask.svg",
+      "filename": "object-sleep-mask.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-sleep-ring.svg",
+      "filename": "object-sleep-ring.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-smartwatch.svg",
+      "filename": "object-smartwatch.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-sneaker.svg",
+      "filename": "object-sneaker.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-soap-dispenser.svg",
+      "filename": "object-soap-dispenser.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-sprout.svg",
+      "filename": "object-sprout.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-standing-desk.svg",
+      "filename": "object-standing-desk.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-stethoscope.svg",
+      "filename": "object-stethoscope.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-strength.svg",
+      "filename": "object-strength.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-sunmoon.svg",
+      "filename": "object-sunmoon.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "object-supplement-bottle.svg",
+      "filename": "object-supplement-bottle.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-therapy-lamp.svg",
+      "filename": "object-therapy-lamp.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-thermometer.svg",
+      "filename": "object-thermometer.svg",
+      "category": "Objects",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "object-thermos.svg",
+      "filename": "object-thermos.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-vitality.svg",
+      "filename": "object-vitality.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-walking-poles.svg",
+      "filename": "object-walking-poles.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-water-glass.svg",
+      "filename": "object-water-glass.svg",
+      "category": "Objects",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "object-wheelchair.svg",
+      "filename": "object-wheelchair.svg",
+      "category": "Objects",
+      "collection": "objects-to-100"
+    },
+    {
+      "path": "object-yogamat.svg",
+      "filename": "object-yogamat.svg",
+      "category": "Objects",
+      "collection": "original"
+    },
+    {
+      "path": "sun.svg",
+      "filename": "sun.svg",
+      "category": "Other",
+      "collection": "original"
+    },
+    {
+      "path": "veg-asparagus.svg",
+      "filename": "veg-asparagus.svg",
+      "category": "Vegetables",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "veg-beet.svg",
+      "filename": "veg-beet.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-broccoli.svg",
+      "filename": "veg-broccoli.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-cabbage.svg",
+      "filename": "veg-cabbage.svg",
+      "category": "Vegetables",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "veg-carrot.svg",
+      "filename": "veg-carrot.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-cauliflower.svg",
+      "filename": "veg-cauliflower.svg",
+      "category": "Vegetables",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "veg-corn.svg",
+      "filename": "veg-corn.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-cucumber.svg",
+      "filename": "veg-cucumber.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-eggplant.svg",
+      "filename": "veg-eggplant.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-garlic.svg",
+      "filename": "veg-garlic.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-greens.svg",
+      "filename": "veg-greens.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-kale.svg",
+      "filename": "veg-kale.svg",
+      "category": "Vegetables",
+      "collection": "expansion-30"
+    },
+    {
+      "path": "veg-mushroom.svg",
+      "filename": "veg-mushroom.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-onion.svg",
+      "filename": "veg-onion.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-pea-pod.svg",
+      "filename": "veg-pea-pod.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-peas.svg",
+      "filename": "veg-peas.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-pepper.svg",
+      "filename": "veg-pepper.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-pumpkin.svg",
+      "filename": "veg-pumpkin.svg",
+      "category": "Vegetables",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "veg-spinach.svg",
+      "filename": "veg-spinach.svg",
+      "category": "Vegetables",
+      "collection": "expansion-50"
+    },
+    {
+      "path": "veg-sweet-potato.svg",
+      "filename": "veg-sweet-potato.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    },
+    {
+      "path": "veg-tomato.svg",
+      "filename": "veg-tomato.svg",
+      "category": "Vegetables",
+      "collection": "original"
+    }
+  ]
+}

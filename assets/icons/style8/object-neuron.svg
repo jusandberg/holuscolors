@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200"><defs>
+<linearGradient id="ink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c858d"/><stop offset="1" stop-color="#22303d"/></linearGradient>
+<linearGradient id="sage" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#aeb9aa"/><stop offset="1" stop-color="#617360"/></linearGradient>
+<linearGradient id="pale" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f8f8"/><stop offset="1" stop-color="#dce3e5"/></linearGradient>
+<linearGradient id="terra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfbfba"/><stop offset="1" stop-color="#b77f79"/></linearGradient>
+<linearGradient id="mustard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2d3ad"/><stop offset="1" stop-color="#b79d64"/></linearGradient>
+<linearGradient id="plum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9becb"/><stop offset="1" stop-color="#8f7d94"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c2d0d6"/><stop offset="1" stop-color="#7f98a4"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf7"/><stop offset="1" stop-color="#e7e1d3"/></linearGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#22303d" flood-opacity=".13"/></filter>
+</defs><g fill="none" stroke="#465745" stroke-width="6" stroke-linecap="round"><path d="M117 99L72 58M117 99L66 112M117 99l-10 61M117 99l55-48M117 99l54 58"/><path d="M72 58L48 48M72 58l-4-26M66 112l-25 8M107 160l-16 20M172 51l20-18M171 157l22 13"/></g><g filter="url(#soft)"><circle cx="118" cy="99" r="35" fill="url(#plum)"/></g><circle cx="118" cy="99" r="14" fill="url(#cream)"/><g fill="url(#sage)"><circle cx="48" cy="48" r="9"/><circle cx="68" cy="32" r="9"/><circle cx="41" cy="120" r="9"/><circle cx="91" cy="180" r="9"/><circle cx="192" cy="33" r="9"/><circle cx="193" cy="170" r="9"/></g></svg>

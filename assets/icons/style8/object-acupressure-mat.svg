@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200"><defs>
+<linearGradient id="ink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c858d"/><stop offset="1" stop-color="#22303d"/></linearGradient>
+<linearGradient id="sage" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#aeb9aa"/><stop offset="1" stop-color="#617360"/></linearGradient>
+<linearGradient id="pale" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f8f8"/><stop offset="1" stop-color="#dce3e5"/></linearGradient>
+<linearGradient id="terra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfbfba"/><stop offset="1" stop-color="#b77f79"/></linearGradient>
+<linearGradient id="mustard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2d3ad"/><stop offset="1" stop-color="#b79d64"/></linearGradient>
+<linearGradient id="plum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9becb"/><stop offset="1" stop-color="#8f7d94"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c2d0d6"/><stop offset="1" stop-color="#7f98a4"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf7"/><stop offset="1" stop-color="#e7e1d3"/></linearGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#22303d" flood-opacity=".13"/></filter>
+</defs><g filter="url(#soft)"><rect x="42" y="58" width="156" height="102" rx="20" fill="url(#plum)"/><rect x="54" y="70" width="132" height="78" rx="14" fill="#f3eef4" opacity=".35"/></g><g fill="url(#cream)" stroke="#8f7d94" stroke-width="1.5"><path d="M76 82l4 7 8-1-5 6 3 8-8-4-7 5 1-9-6-5 8-2Z"/><path d="M76 110l4 7 8-1-5 6 3 8-8-4-7 5 1-9-6-5 8-2Z"/><path d="M104 82l4 7 8-1-5 6 3 8-8-4-7 5 1-9-6-5 8-2Z"/><path d="M104 110l4 7 8-1-5 6 3 8-8-4-7 5 1-9-6-5 8-2Z"/><path d="M132 82l4 7 8-1-5 6 3 8-8-4-7 5 1-9-6-5 8-2Z"/><path d="M132 110l4 7 8-1-5 6 3 8-8-4-7 5 1-9-6-5 8-2Z"/><path d="M160 82l4 7 8-1-5 6 3 8-8-4-7 5 1-9-6-5 8-2Z"/><path d="M160 110l4 7 8-1-5 6 3 8-8-4-7 5 1-9-6-5 8-2Z"/></g></svg>

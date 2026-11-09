@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200"><defs>
+<linearGradient id="ink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c858d"/><stop offset="1" stop-color="#22303d"/></linearGradient>
+<linearGradient id="sage" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#aeb9aa"/><stop offset="1" stop-color="#617360"/></linearGradient>
+<linearGradient id="pale" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6f8f8"/><stop offset="1" stop-color="#dce3e5"/></linearGradient>
+<linearGradient id="terra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dfbfba"/><stop offset="1" stop-color="#b77f79"/></linearGradient>
+<linearGradient id="mustard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2d3ad"/><stop offset="1" stop-color="#b79d64"/></linearGradient>
+<linearGradient id="plum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9becb"/><stop offset="1" stop-color="#8f7d94"/></linearGradient>
+<linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c2d0d6"/><stop offset="1" stop-color="#7f98a4"/></linearGradient>
+<linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf7"/><stop offset="1" stop-color="#e7e1d3"/></linearGradient>
+<filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#22303d" flood-opacity=".13"/></filter>
+</defs><g filter="url(#soft)"><path d="M47 102c0-44 32-71 76-71 41 0 72 27 72 70 0 45-29 76-75 76-43 0-73-31-73-75Z" fill="url(#pale)" stroke="#7c858d" stroke-width="3"/></g><circle cx="119" cy="103" r="31" fill="url(#plum)"/><circle cx="126" cy="95" r="11" fill="#f1eaf2" opacity=".55"/><g fill="url(#sage)"><ellipse cx="78" cy="75" rx="14" ry="8" transform="rotate(-28 78 75)"/><ellipse cx="161" cy="129" rx="14" ry="8" transform="rotate(-28 161 129)"/></g><g fill="url(#terra)"><circle cx="75" cy="127" r="7"/><circle cx="164" cy="76" r="7"/></g><path d="M61 104c18-10 19 15 35 5M145 104c18-10 19 15 35 5" fill="none" stroke="#8299a5" stroke-width="4" stroke-linecap="round"/></svg>

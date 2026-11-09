@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200"><defs>
+  <linearGradient id="ink" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7c858d"/><stop offset="1" stop-color="#22303d"/></linearGradient>
+  <linearGradient id="sage" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#939e92"/><stop offset="1" stop-color="#465745"/></linearGradient>
+  <linearGradient id="pale" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f7"/><stop offset="1" stop-color="#dae0e3"/></linearGradient>
+  <linearGradient id="terra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcbcb9"/><stop offset="1" stop-color="#b88782"/></linearGradient>
+  <linearGradient id="mustard" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ddd0af"/><stop offset="1" stop-color="#bba573"/></linearGradient>
+  <linearGradient id="plum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c4b9c7"/><stop offset="1" stop-color="#938298"/></linearGradient>
+  <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b9c8d0"/><stop offset="1" stop-color="#8299a5"/></linearGradient>
+  <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#faf8f1"/><stop offset="1" stop-color="#e5e1d4"/></linearGradient>
+</defs><g stroke="#979b9d" stroke-width="1.5"><path d="M50 116l44-36 48 18-42 40Z" fill="url(#cream)"/><path d="M100 138l42-40v40l-42 36Z" fill="url(#mustard)"/><path d="M50 116l50 22v36l-50-22Z" fill="url(#pale)"/><path d="M120 76l34-28 40 16-34 31Z" fill="url(#cream)"/><path d="M160 95l34-31v33l-34 30Z" fill="url(#mustard)"/><path d="M120 76l40 19v32l-40-18Z" fill="url(#pale)"/></g><g fill="#465745"><circle cx="86" cy="113" r="3"/><circle cx="118" cy="105" r="3"/><circle cx="151" cy="76" r="3"/><circle cx="173" cy="72" r="3"/></g></svg>
