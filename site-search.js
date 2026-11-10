@@ -259,7 +259,7 @@
     const links = [
       ['Services', '/nutritional-counselling/'],
       ['Protein', '/digest/#n-protein'],
-      ['GLP-1 support', '/glp1-nutrition-support/'],
+      ['Approach', '/nutrition-behaviour-change/'],
       ['FAQ', '/faq/']
     ];
 
@@ -312,7 +312,7 @@
     const input = makeElement(doc, 'input', 'holus-search-input');
     input.id = 'site-search-input';
     input.type = 'search';
-    input.placeholder = 'Try protein, insurance or GLP-1';
+    input.placeholder = 'Try protein, insurance or habits';
     input.autocomplete = 'off';
     input.spellcheck = true;
     input.setAttribute('aria-describedby', 'site-search-hint');

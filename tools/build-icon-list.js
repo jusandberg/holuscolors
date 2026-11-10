@@ -13,7 +13,6 @@ const pages = [
   ['About', 'about/index.html'],
   ['Services', 'nutritional-counselling/index.html'],
   ['Approach', 'nutrition-behaviour-change/index.html'],
-  ['GLP-1', 'glp1-nutrition-support/index.html'],
   ['Digest', 'digest/index.html'],
   ['FAQ', 'faq/index.html'],
   ['Contact', 'contact/index.html'],

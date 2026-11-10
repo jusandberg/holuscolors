@@ -83,7 +83,6 @@ whoTiles.forEach((tile) => {
     faq: [['#faq', 'fig', 'r', '2rem', 96, 'r', '1.6rem', 60, 10]],
     about: [['.ab-hero', 'cherries', 'r', '4rem', 92, 'r', '9rem', 58, -10], ['.ab-quote', 'lemon', 'l', 'calc(100% - 8rem)', 88, 'r', '2.4rem', 54, 20]],
     'nutrition-behaviour-change': [['.behaviour-relationship', 'watermelon', 'r', '3rem', 110, 'r', '1rem', 64, -14], ['.behaviour-factors', 'fig', 'l', 'calc(100% - 10rem)', 100, 'r', '1.6rem', 58, -14]],
-    'glp1-nutrition-support': [['.page-hero', 'sprig', 'r', '3rem', 92, 'r', '30rem', 56, -10], ['.page-hero + .section-pad', 'almond', 'l', 'calc(100% - 8rem)', 70, 'r', '2rem', 44, 24]],
     digest: [['.next-step', 'carrot', 'r', '.5rem', 80, 'r', '0rem', 50, 0]],
   };
 

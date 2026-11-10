@@ -43,14 +43,6 @@
       keywords: ['approach', 'behaviour change', 'behavior change', 'habits', 'motivation', 'routines', 'preferences', 'real life', 'physiology']
     },
     {
-      id: 'page-glp1',
-      type: 'Page',
-      title: 'GLP-1 nutrition support',
-      summary: 'Nutrition education for adequate intake, protein, balanced eating and practical choices alongside prescriber care.',
-      url: '/glp1-nutrition-support/',
-      keywords: ['GLP-1', 'GLP1', 'appetite medication', 'protein', 'small meals', 'prescriber', 'adequate nutrition', 'semaglutide', 'tirzepatide']
-    },
-    {
       id: 'page-digest',
       type: 'Page',
       title: 'Hōlus Digest',
