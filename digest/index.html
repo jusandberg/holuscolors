@@ -125,60 +125,41 @@
 .bp-on{position:absolute;width:27%;padding:0;border:0;background:none;transform:translate(-50%,-50%);cursor:pointer;filter:drop-shadow(0 5px 6px rgba(36,51,65,.18));animation:bp-pop .4s cubic-bezier(.2,.9,.3,1.35) both}
 .bp-on img{display:block;width:100%;height:auto}
 @keyframes bp-pop{0%{transform:translate(-50%,-50%) scale(.3);opacity:0}100%{transform:translate(-50%,-50%) scale(1);opacity:1}}
-.bp-text .nutri-pill{background:#dfe7dc}
-.bp-text h3{margin:.35rem 0 .35rem;font:800 clamp(1.25rem,2.6vw,1.55rem)/1.1 Manrope,sans-serif;letter-spacing:-.035em}
-.bp-text p{margin:0;color:var(--muted);font-size:.93rem}
-.bp-bar{display:flex;height:.6rem;margin-top:1rem;border-radius:999px;overflow:hidden;background:#fff}
-.bp-bar i{display:block;height:100%;width:0;transition:width .45s ease}
-.bp-marks{position:relative;height:.45rem}.bp-marks i{position:absolute;top:0;height:.4rem;border-left:2px solid #b9bbbe}
-.bp-goal{margin:.15rem 0 0!important;font-size:.75rem!important}
-.bp-actions{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:1rem}
-.bp-actions button{padding:.5rem .95rem;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font:700 .82rem Manrope,sans-serif;cursor:pointer}
-.bp-actions button:first-child{background:var(--ink);border-color:var(--ink);color:#fff}
+
+.bp-text{text-align:center}.bp-text h3{margin:.2rem 0 0;font:800 clamp(1.25rem,2.6vw,1.55rem)/1.1 Manrope,sans-serif;letter-spacing:-.035em}
 @media(max-width:820px){.bp-wrap{grid-template-columns:1fr}.bp-store{padding-right:1.7rem}.bp-food span{font-size:.68rem}}
-@media(prefers-reduced-motion:reduce){.bp-on{animation:none}.bp-bar i,.bp-food{transition:none}}
+@media(prefers-reduced-motion:reduce){.bp-on{animation:none}.bp-food{transition:none}}
 </style><div class="section-shell">
 <header class="nutri-head"><p class="eyebrow">Try it</p><h2 id="bp-title" style="margin:.7rem 0 .6rem;font-size:clamp(2.1rem,5vw,3.2rem);line-height:1;letter-spacing:-.05em">Build a balanced plate.</h2><p>Take foods from the shelves to fill your plate. Aim for half vegetables and fruits, a quarter protein and a quarter whole grains.</p></header>
 <div class="bp-wrap">
  <div class="bp-store" role="group" aria-label="Foods to choose from"></div>
  <div class="nutri-card bp-card">
-  <div class="bp-plate" aria-label="Your plate"><div class="bp-face"><span class="bp-lbl" style="left:25%;top:86%">Veg + fruit</span><span class="bp-lbl" style="left:72%;top:9%">Protein</span><span class="bp-lbl" style="left:72%;top:87%">Grains</span></div></div>
-  <div class="bp-text" aria-live="polite"><span class="nutri-pill" data-bp-tag>Start here</span><h3 data-bp-head>Build a plate.</h3><p data-bp-msg>Pick a few foods from each shelf and watch the plate fill in.</p>
-   <div class="bp-bar" aria-hidden="true"><i style="background:#71836d"></i><i style="background:#b4877b"></i><i style="background:#c7b07a"></i></div>
-   <div class="bp-marks" aria-hidden="true"><i style="left:50%"></i><i style="left:75%"></i></div>
-   <p class="bp-goal">The marks show the goal: half, then a quarter and a quarter.</p>
-   <div class="bp-actions"><button type="button" data-bp-example>Show an example</button><button type="button" data-bp-clear>Clear</button></div>
-  </div>
+  <div class="bp-plate" aria-label="Your plate"><div class="bp-face"><span class="bp-lbl" style="left:31%;top:75%">Veg + fruit</span><span class="bp-lbl" style="left:70%;top:15%">Protein</span><span class="bp-lbl" style="left:70%;top:80%">Grains</span></div></div>
+  <div class="bp-text" aria-live="polite"><h3 data-bp-head>Build a plate.</h3></div>
  </div>
 </div>
 <p class="nutri-note">Based on the plate model in <a href="https://food-guide.canada.ca/en/" target="_blank" rel="noopener">Canada’s food guide</a>. Tap a food on the plate to put it back.</p>
 </div><script>(function(){
 var root=document.querySelector('.bp');if(!root)return;var IMG='../assets/illustrations/';
-var G={veg:{title:'Veg + fruit',name:'vegetables and fruits',max:5,slots:[[29,17],[14,37],[37,38],[16,60],[36,62]],foods:[['Broccoli','veg-broccoli'],['Carrots','veg-carrot'],['Greens','veg-greens'],['Pepper','veg-pepper'],['Berries','fruit-berries']]},
- pro:{title:'Protein',name:'protein',max:2,slots:[[64,30],[85,37]],foods:[['Chicken','food-chicken-golden'],['Salmon','food-salmon'],['Eggs','food-egg'],['Tofu','food-tofu'],['Lentils','food-lentil-bowl']]},
- gr:{title:'Whole grains',name:'whole grains',max:2,slots:[[64,62],[85,69]],foods:[['Rice','food-rice-bowl'],['Quinoa','food-quinoa-bowl'],['Bread','food-bread'],['Oats','food-oat-bowl'],['Pasta','food-pasta']]}};
+var G={veg:{title:'Veg + fruit',name:'vegetables and fruits',max:5,slots:[[30,15],[14,34],[37,34],[18,54],[38,55]],foods:[['Broccoli','veg-broccoli'],['Carrots','veg-carrot'],['Greens','veg-greens'],['Pepper','veg-pepper'],['Berries','fruit-berries']]},
+ pro:{title:'Protein',name:'protein',max:2,slots:[[63,34],[83,40]],foods:[['Chicken','food-chicken-golden'],['Salmon','food-salmon'],['Eggs','food-egg'],['Tofu','food-tofu'],['Lentils','food-lentil-bowl']]},
+ gr:{title:'Whole grains',name:'whole grains',max:2,slots:[[63,59],[83,65]],foods:[['Rice','food-rice-bowl'],['Quinoa','food-quinoa-bowl'],['Bread','food-bread'],['Oats','food-oat-bowl'],['Pasta','food-pasta']]}};
 var plate={veg:[],pro:[],gr:[]},note='';var face=root.querySelector('.bp-face'),store=root.querySelector('.bp-store');
 Object.keys(G).forEach(function(k){var s=document.createElement('div');s.className='bp-shelf';
  s.innerHTML='<h3>'+G[k].title+'</h3><ul class="bp-row">'+G[k].foods.map(function(f){return '<li><button type="button" class="bp-food" aria-pressed="false" data-k="'+k+'" data-f="'+f[0]+'"><img src="'+IMG+f[1]+'.svg" alt="" width="240" height="200"><span>'+f[0]+'</span></button></li>'}).join('')+'</ul>';store.appendChild(s);});
 function toggle(k,name){var l=plate[k],i=l.indexOf(name);note='';
- if(i>-1)l.splice(i,1);else if(l.length>=G[k].max)note='The '+G[k].name+' part is full. Tap a food on the plate to put it back.';else l.push(name);render();}
+ if(i>-1)l.splice(i,1);else if(l.length>=G[k].max)note='That part of the plate is full.';else l.push(name);render();}
 function img(k,name){for(var i=0;i<G[k].foods.length;i++)if(G[k].foods[i][0]===name)return IMG+G[k].foods[i][1]+'.svg';}
 function render(){var n={veg:plate.veg.length,pro:plate.pro.length,gr:plate.gr.length},t=n.veg+n.pro+n.gr;
  face.querySelectorAll('.bp-on').forEach(function(e){e.remove()});
  Object.keys(G).forEach(function(k){plate[k].forEach(function(name,j){var b=document.createElement('button');b.type='button';b.className='bp-on';b.setAttribute('aria-label','Put back '+name);
   b.style.left=G[k].slots[j][0]+'%';b.style.top=G[k].slots[j][1]+'%';b.innerHTML='<img src="'+img(k,name)+'" alt="">';b.onclick=function(){toggle(k,name)};face.appendChild(b);});});
  root.querySelectorAll('.bp-food').forEach(function(b){b.setAttribute('aria-pressed',String(plate[b.dataset.k].indexOf(b.dataset.f)>-1))});
- var tag='Start here',h='Build a plate.',m='Pick a few foods from each shelf and watch the plate fill in.';
- if(t){if(n.veg>=3&&n.pro>=1&&n.gr>=1){tag='Balanced';h='That’s a balanced plate.';m='Half vegetables and fruits, a quarter protein, a quarter whole grains. Fibre, lasting energy, and it keeps you full.';}
-  else if(n.pro===0){tag='Add protein';h='Add a protein.';m='Protein helps you feel full longer and steadies your energy after the meal.';}
-  else if(n.veg<3){tag='More colour';h='Fill half with vegetables and fruits.';m='They add fibre, vitamins and minerals, and bring volume to the meal.';}
-  else{tag='Add a whole grain';h='Add a whole grain.';m='Whole grains give lasting energy and more fibre than refined grains.';}}
- if(note)m=note;
- root.querySelector('[data-bp-tag]').textContent=tag;root.querySelector('[data-bp-head]').textContent=h;root.querySelector('[data-bp-msg]').textContent=m;
- var bars=root.querySelectorAll('.bp-bar i');['veg','pro','gr'].forEach(function(k,i){bars[i].style.width=t?(n[k]/t*100)+'%':'0'});}
+ var h='Build a plate.';
+ if(t){if(n.veg>=3&&n.pro>=1&&n.gr>=1)h='That’s a balanced plate.';else if(n.pro===0)h='Add a protein.';else if(n.veg<3)h='Fill half with vegetables and fruits.';else h='Add a whole grain.';}
+ if(note)h=note;
+ root.querySelector('[data-bp-head]').textContent=h;}
 root.querySelectorAll('.bp-food').forEach(function(b){b.addEventListener('click',function(){toggle(b.dataset.k,b.dataset.f)})});
-root.querySelector('[data-bp-example]').onclick=function(){plate={veg:['Broccoli','Carrots','Greens','Pepper'],pro:['Salmon'],gr:['Quinoa']};note='';render();};
-root.querySelector('[data-bp-clear]').onclick=function(){plate={veg:[],pro:[],gr:[]};note='';render();};
 render();})();</script></section>
 <section class="next-step" aria-label="Next step"><div class="section-shell"><div class="next-card"><figure class="next-art"><img src="../assets/food-wheat.svg" alt="" width="240" height="200"></figure><div class="next-copy"><p class="eyebrow">Keep exploring</p><h2>Want support that fits your life?</h2><p>See how Nutrition Counselling works and how we can work together.</p></div><div class="next-chips"><a class="chip-link chip-primary" href="../nutritional-counselling/index.html">Services<svg class="arr arr-right" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3"></path></svg></a><a class="chip-link" href="../nutrition-behaviour-change/index.html">Approach<svg class="arr arr-right" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3"></path></svg></a></div></div></div></section>
 </main>
