@@ -81,7 +81,7 @@ whoTiles.forEach((tile) => {
     home: [['#home', 'strawberry', 'r', '1rem', 100, 'r', '8rem', 64, -14], ['#method', 'berries', 'l', 'calc(100% - 9rem)', 92, 'r', '1.4rem', 56, 0], ['#contact', 'grapes-light', 'r', '3rem', 120, 'r', '1rem', 66, 12], ['#contact', 'mint-light', 'l', '52%', 110, 'l', '88%', 52, -18]],
     'nutritional-counselling': [['.page-hero', 'cherries', 'r', '3rem', 96, 'r', '6.4rem', 58, -8], ['.services', 'pineapple', 'r', '2.5rem', 84, 'r', '1.6rem', 50, 12], ['.expect', 'lemon', 'l', 'calc(100% - 7rem)', 84, 'l', '1.6rem', 50, -12], ['.expect', 'carrot', 'r', '4rem', 104, 'r', '2rem', 60, -16]],
     faq: [['#faq', 'fig', 'r', '2rem', 96, 'r', '1.6rem', 60, 10]],
-    about: [['.page-hero', 'mint', 'r', '4rem', 92, 'r', '9rem', 58, -10], ['.page-hero + .section-pad', 'peas', 'l', 'calc(100% - 8rem)', 88, 'r', '2.4rem', 54, 20]],
+    about: [['.ab-hero', 'cherries', 'r', '4rem', 92, 'r', '9rem', 58, -10], ['.ab-quote', 'lemon', 'l', 'calc(100% - 8rem)', 88, 'r', '2.4rem', 54, 20]],
     'midlife-nutrition': [['.page-hero', 'leaf', 'r', '4rem', 96, 'r', '30rem', 58, 22], ['.page-hero + .section-pad', 'cherries', 'l', 'calc(100% - 8rem)', 88, 'r', '2rem', 56, 0]],
     'nutrition-behaviour-change': [['.behaviour-relationship', 'watermelon', 'r', '3rem', 110, 'r', '1rem', 64, -14], ['.behaviour-factors', 'fig', 'l', 'calc(100% - 10rem)', 100, 'r', '1.6rem', 58, -14]],
     'glp1-nutrition-support': [['.page-hero', 'sprig', 'r', '3rem', 92, 'r', '30rem', 56, -10], ['.page-hero + .section-pad', 'almond', 'l', 'calc(100% - 8rem)', 70, 'r', '2rem', 44, 24]],

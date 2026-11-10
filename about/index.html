@@ -92,64 +92,52 @@
     </span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle menu</span><span></span><span></span></button><nav id="site-nav" class="site-nav" aria-label="Primary navigation"><a href="../about/index.html" aria-current="page">About</a><a href="../nutritional-counselling/index.html">Services</a><a href="../nutrition-behaviour-change/index.html">Approach</a><a href="../digest/index.html">Digest</a><a class="button button-small" href="mailto:hello@holus.ca?subject=Consultation%20booking">Book a consultation</a></nav></div></header>
 <main id="main">
 <style>
-.ab-hero{padding-block:clamp(3.5rem,8vw,7rem) clamp(3rem,6vw,5rem)}
-.ab-hero-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(2rem,6vw,6rem);align-items:center}
-.ab-photo{margin:0;border-radius:32px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 30px 70px rgba(22,25,28,.12)}
+.ab-hero{padding-block:clamp(4rem,9vw,8rem) clamp(3rem,7vw,6rem)}
+.ab-hero-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(2.5rem,7vw,7rem);align-items:center}
+.ab-photo{margin:0;border-radius:28px;overflow:hidden;aspect-ratio:4/5}
 .ab-photo img{width:100%;height:100%;object-fit:cover}
-.ab-hero h1{font-size:clamp(3rem,6.4vw,6rem);line-height:.95;max-width:11ch;margin:.3rem 0 1.4rem}
-.ab-lead{font-size:clamp(1.15rem,1.8vw,1.35rem);line-height:1.5;color:#16191c;max-width:34rem;margin:0}
-.ab-sub{color:#6e6e73;max-width:34rem;margin:1rem 0 0}
-.ab-badges{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.8rem}
-.ab-badges span{display:inline-flex;align-items:center;gap:.45rem;padding:.5rem .9rem;border:1px solid #e8e8ed;border-radius:999px;font:700 .8rem Manrope,sans-serif;color:#16191c;background:#fff}
-.ab-badges i{width:7px;height:7px;border-radius:50%}
-.ab-statement{background:#f5f5f7;padding-block:clamp(5rem,11vw,9rem);text-align:center}
-.ab-statement h2{font-size:clamp(2.4rem,5.6vw,5rem);line-height:1;max-width:16ch;margin:1rem auto 0}
-.ab-statement h2 em{font-style:normal;background:linear-gradient(90deg,#71836d,#8aa3b0 35%,#9c8aa2 60%,#b4877b 82%,#c7b07a);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
-.ab-sec{padding-block:clamp(4.5rem,9vw,7.5rem)}
-.ab-head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:1rem 3rem;margin-bottom:2.4rem}
-.ab-head h2{font-size:clamp(2.1rem,4.4vw,3.6rem);line-height:1;max-width:14ch}
-.ab-head p{max-width:28rem;margin:0;color:#6e6e73}
-.ab-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
-.ab-card{padding:1.6rem 1.4rem 1.7rem;border-radius:28px;background:var(--t)}
-.ab-card img{width:5.5rem;height:auto;margin:-.4rem 0 .6rem -.6rem}
-.ab-card h3{font-size:1.25rem;letter-spacing:-.03em;margin:0 0 .45rem}
-.ab-card p{margin:0;color:#3d4246;font-size:.95rem;line-height:1.55}
-.ab-context{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,6vw,6rem);align-items:center}
-.ab-context h2{font-size:clamp(2.1rem,4.4vw,3.6rem);line-height:1;margin:.6rem 0 1.2rem}
-.ab-context p{color:#6e6e73;margin:0;max-width:30rem}
-.ab-chips{display:flex;flex-wrap:wrap;gap:.6rem}
-.ab-chips span{display:inline-flex;align-items:center;gap:.55rem;padding:.85rem 1.2rem;border-radius:999px;background:#f5f5f7;font:700 1rem Manrope,sans-serif;color:#16191c;letter-spacing:-.01em}
-.ab-chips i{width:9px;height:9px;border-radius:50%}
-.ab-chips span.you{background:#16191c;color:#fff}
-.ab-creds{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
-.ab-cred{padding:1.8rem 1.6rem;border:1px solid #e8e8ed;border-radius:28px}
-.ab-cred small{display:block;color:#6e6e73;font:700 .74rem Manrope,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.7rem}
-.ab-cred b{display:block;font:800 clamp(1.3rem,2.2vw,1.7rem)/1.15 Manrope,sans-serif;letter-spacing:-.03em;color:#16191c}
-.ab-areas{margin-top:1.2rem;color:#6e6e73}
-.ab-areas a{color:#16191c;font-weight:600;margin-left:.6rem}
-@media(max-width:900px){.ab-hero-grid,.ab-context{grid-template-columns:1fr}.ab-photo{max-width:26rem}.ab-cards{grid-template-columns:repeat(2,1fr)}.ab-creds{grid-template-columns:1fr}}
-@media(max-width:520px){.ab-cards{grid-template-columns:1fr}}
+.ab-hero h1{font-size:clamp(2.8rem,5.6vw,5.2rem);line-height:.98;max-width:11ch;margin:.4rem 0 1.5rem}
+.ab-hero p{max-width:32rem;margin:0 0 1rem;color:#6e6e73;font-size:1.05rem;line-height:1.65}
+.ab-hero p.ab-lead{color:#16191c;font-size:clamp(1.12rem,1.6vw,1.25rem);line-height:1.5}
+.ab-cred{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin-top:1.6rem;padding-top:1.4rem;border-top:1px solid #e8e8ed;font:700 .85rem Manrope,sans-serif;color:#16191c}
+.ab-cred span{display:inline-flex;align-items:center;gap:.5rem}
+.ab-cred i{width:7px;height:7px;border-radius:50%}
+.ab-quote{padding-block:clamp(4rem,9vw,7rem);text-align:center;border-top:1px solid #e8e8ed}
+.ab-quote h2{font-size:clamp(2.1rem,4.6vw,4rem);line-height:1.04;max-width:18ch;margin:.8rem auto 0}
+.ab-quote h2 em{font-style:normal;background:linear-gradient(90deg,#71836d,#8aa3b0 35%,#9c8aa2 60%,#b4877b 82%,#c7b07a);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}
+.ab-ways{padding-block:0 clamp(5rem,10vw,8rem)}
+.ab-row{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,3.5rem)}
+.ab-way img{width:6.5rem;height:auto;margin:0 0 .9rem -.5rem}
+.ab-way h3{font-size:1.2rem;letter-spacing:-.03em;margin:0 0 .45rem}
+.ab-way p{margin:0;color:#6e6e73;font-size:.98rem;line-height:1.6;max-width:22rem}
+@media(max-width:900px){.ab-hero-grid{grid-template-columns:1fr}.ab-photo{max-width:24rem}.ab-row{grid-template-columns:1fr}}
+.ab-h2{font:800 clamp(1.9rem,4.2vw,3rem)/1.05 Manrope,sans-serif;letter-spacing:-.045em;margin:0 0 1.8rem;max-width:18ch}
+.ab-qs{display:grid;gap:.8rem;margin:0 0 1.8rem}
+.ab-q{margin:0;font:600 clamp(1.1rem,2.4vw,1.4rem)/1.35 Manrope,sans-serif;letter-spacing:-.02em;padding:1.1rem 1.4rem;border-radius:22px;max-width:34rem}
+.ab-q:nth-child(2){margin-left:auto}
+.ab-qlead{font-size:1.12rem;max-width:38rem;margin:0}
+.ab-feel-title{margin-top:clamp(4rem,8vw,6rem)}
+@media(max-width:760px){.ab-q:nth-child(2){margin-left:0}}
 </style>
 <section class="ab-hero"><div class="section-shell ab-hero-grid">
   <figure class="ab-photo"><img src="../assets/juliana-about.jpg" alt="Juliana dos Santos smiling, seated in a warm, relaxed home setting" width="1200" height="1459"></figure>
   <div><p class="eyebrow">About me</p><h1>Hi there, thanks for stopping by.</h1>
     <p class="ab-lead"><strong>I’m Juliana, a Nutritionist who believes good nutrition has to work for both your body and your life.</strong></p>
-    <div class="ab-badges"><span><i style="background:#c7b07a"></i>RNCP, NNCP, CFNP</span><span><i style="background:#8aa3b0"></i>Registered with IONC</span><span><i style="background:#9c8aa2"></i>CANNP member</span></div>
+    <p>Knowing what your body needs is only part of the picture. How you eat is also shaped by your routines, preferences, environment and what’s going on in your life. I pay attention to both.</p>
+    <div class="ab-cred"><span><i style="background:#c7b07a"></i>RNCP, NNCP, CFNP</span><span><i style="background:#8aa3b0"></i>Registered with IONC</span><span><i style="background:#b4877b"></i>Professional Member of CANNP</span></div>
   </div>
 </div></section>
-<section class="ab-statement"><div class="section-shell"><p class="eyebrow">The philosophy behind the work</p><h2>The science may be universal. How it fits your life is <em>personal.</em></h2></div></section>
-<section class="ab-sec"><div class="section-shell ab-context">
-  <div><p class="eyebrow">The whole picture</p><h2>Your nutrition, in context.</h2><p>Knowing what your body needs is only part of the picture. How you eat is also shaped by your routines, preferences, environment and what’s going on in your life. I pay attention to both.</p></div>
-  <div class="ab-chips"><span><i style="background:#c7b07a"></i>Food</span><span><i style="background:#8aa3b0"></i>Routines</span><span><i style="background:#b4877b"></i>Preferences</span><span><i style="background:#71836d"></i>Environment</span><span><i style="background:#9c8aa2"></i>Lifestyle</span><span><i style="background:#8aa3b0"></i>Sleep</span><span><i style="background:#c7b07a"></i>Movement</span><span><i style="background:#243341"></i>Goals</span><span><i style="background:#b4877b"></i>Life stage</span><span class="you">You</span></div>
-</div></section>
-<section class="ab-sec" style="padding-top:0"><div class="section-shell">
-  <div class="ab-head"><div><p class="eyebrow">Working together</p><h2>What it’s like to work with me.</h2></div><p>Practical, personal and paced to your life.</p></div>
-  <div class="ab-cards"><div class="ab-card" style="--t:#e8eef1"><img src="../assets/illustrations/object-bubbles.svg" alt="" width="240" height="200"><h3>A conversation</h3><p>Working with me is a conversation. I ask before assuming.</p></div><div class="ab-card" style="--t:#f4efe2"><img src="../assets/illustrations/object-magnifier.svg" alt="" width="240" height="200"><h3>The why and the what</h3><p>I want to understand the “why” as well as the “what.”</p></div><div class="ab-card" style="--t:#f3e9e5"><img src="../assets/illustrations/object-signpost.svg" alt="" width="240" height="200"><h3>Built with you</h3><p>We build recommendations together, rather than me handing over a generic set of rules.</p></div><div class="ab-card" style="--t:#efeaf1"><img src="../assets/illustrations/object-compass.svg" alt="" width="240" height="200"><h3>Room to adjust</h3><p>You’ll leave with a few clear priorities you can put into practice, and room to adjust them as we go.</p></div></div>
-</div></section>
-<section class="ab-sec" style="padding-top:0"><div class="section-shell">
-  <div class="ab-head"><div><p class="eyebrow">Credentials</p><h2>Trained, registered and accountable.</h2></div></div>
-  <div class="ab-creds"><div class="ab-cred"><small>Credentials</small><b>RNCP, NNCP, CFNP</b></div><div class="ab-cred"><small>Registration</small><b>Registered with IONC</b></div><div class="ab-cred"><small>Membership</small><b>Professional Member of CANNP</b></div></div>
-  <p class="ab-areas">Nutritional Counselling &amp; Education · Wellness Counselling <a class="link-arrow" href="../nutritional-counselling/index.html">Services<svg class="arr arr-right" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3"></path></svg></a></p>
+<section class="ab-quote"><div class="section-shell"><p class="eyebrow">The philosophy behind the work</p><h2>The science may be universal. How it fits your life is <em>personal.</em></h2></div></section>
+<section class="ab-ways"><div class="section-shell">
+  <p class="eyebrow">Sound familiar?</p><h2 class="ab-h2">Maybe you’ve said one of these.</h2>
+  <div class="ab-qs"><p class="ab-q" style="background:#eef2ed">“I know what I should eat. I can’t make it stick.”</p><p class="ab-q" style="background:#f3e9e5">“Every plan works for two weeks, then life gets in the way.”</p><p class="ab-q" style="background:#e8eef1">“I’m tired of feeling like I’m doing it wrong.”</p></div>
+  <p class="ab-qlead">If any of that sounds like you, you’re exactly who I do this work for. We start with your real week, the busy days included, and find what fits.</p>
+  <h2 class="ab-h2 ab-feel-title">How you’ll feel after our first session.</h2>
+  <div class="ab-row">
+    <div class="ab-way"><img src="../assets/illustrations/eat-mug.svg" alt="" width="240" height="200"><h3>Listened to</h3><p>I’ll ask about your days, your family table and the foods you love before I suggest anything.</p></div>
+    <div class="ab-way"><img src="../assets/illustrations/food-smoothie-bowl.svg" alt="" width="240" height="200"><h3>Lighter</h3><p>You’ll leave with one or two things to try this week. Not a 20-page plan.</p></div>
+    <div class="ab-way"><img src="../assets/illustrations/plan-open-journal.svg" alt="" width="240" height="200"><h3>Clear</h3><p>You’ll know why each step matters for you, so it makes sense when life gets busy.</p></div>
+  </div>
 </div></section>
 <section class="next-step" aria-label="Next step"><div class="section-shell"><div class="next-card"><figure class="next-art"><img src="../assets/food-peas.svg" alt="" width="240" height="200"></figure><div class="next-copy"><p class="eyebrow">Keep exploring</p><h2>See how we can work together.</h2><p>Services, pricing and what to expect from a first session.</p></div><div class="next-chips"><a class="chip-link chip-primary" href="../nutritional-counselling/index.html">Services<svg class="arr arr-right" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3"></path></svg></a><a class="chip-link" href="../nutrition-behaviour-change/index.html">Approach<svg class="arr arr-right" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3"></path></svg></a></div></div></div></section></main>
 <footer class="site-footer"><div class="section-shell footer-inner"><div><p>© <span id="year"></span> Hōlus Nutrition Counselling</p></div><nav class="footer-links" aria-label="Practice information"><a href="../practice-policies.html#privacy">Privacy Policy</a><a href="../practice-policies.html#terms">Terms</a><a href="../practice-policies.html#cancellation">Cancellation Policy</a><a href="../practice-policies.html#scope">Scope of Practice</a><a href="../faq/index.html">FAQ</a><a href="mailto:hello@holus.ca">Contact</a></nav></div></footer>
