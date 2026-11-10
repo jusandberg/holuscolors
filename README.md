@@ -1,12 +1,7 @@
-This repo (holuscolors) is a test copy of my website redesign (hōlus.).
-holus-redesign.zip in the repo has the full site. Unzip it so the site files sit
-at the repo root (not inside a holus-redesign folder), delete the zip, commit
-and push. Then turn on GitHub Pages (main, root) and check
-jusandberg.github.io/holuscolors works.
+# hōlus. redesign (test site)
 
-The live site is the separate holus-nutrition repo. Don't change it.
+A working copy of the hōlus. website for trying the minimal redesign: white and charcoal first, with navy, sage, oat gold, dusty blue, clay and plum as small, balanced accents, soft-gradient icons and a new About page.
 
-Design direction: minimal, Apple-like. White and charcoal (#16191c) lead.
-Navy, sage, oat gold, dusty blue, clay and plum are small, balanced accents.
-Icons use the soft-gradient style (no outlines). Plain, natural wording,
-no AI-sounding language. Push every change as we go and check the live link.
+This copy is hidden from search engines. The live site stays in the holus-nutrition repo.
+
+Open index.html, or turn on GitHub Pages (Settings > Pages > main / root).

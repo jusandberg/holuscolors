@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+  <title id="title">Connected nutrition ecosystem graphic</title>
+  <g stroke="#c7d2c4" stroke-opacity=".5" stroke-width="1.3">
+    <line x1="50" y1="50" x2="86" y2="50"/><line x1="50" y1="50" x2="75.5" y2="75.5"/>
+    <line x1="50" y1="50" x2="50" y2="86"/><line x1="50" y1="50" x2="24.5" y2="75.5"/>
+    <line x1="50" y1="50" x2="14" y2="50"/><line x1="50" y1="50" x2="24.5" y2="24.5"/>
+    <line x1="50" y1="50" x2="50" y2="14"/><line x1="50" y1="50" x2="75.5" y2="24.5"/>
+  </g>
+  <circle cx="50" cy="50" r="21" fill="#fff"/>
+  <circle cx="50" cy="50" r="5" fill="#243341"/>
+  <g fill="#71836d">
+    <circle cx="86" cy="50" r="4.5"/><circle cx="75.5" cy="75.5" r="4.5"/>
+    <circle cx="50" cy="86" r="4.5"/><circle cx="24.5" cy="75.5" r="4.5"/>
+    <circle cx="14" cy="50" r="4.5"/><circle cx="24.5" cy="24.5" r="4.5"/>
+    <circle cx="50" cy="14" r="4.5"/><circle cx="75.5" cy="24.5" r="4.5"/>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" width="240" height="200"><defs><linearGradient id="s8objectkettlebell1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#939e92"/><stop offset="1" stop-color="#465745"/></linearGradient><linearGradient id="s8objectkettlebell2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f5f7"/><stop offset="1" stop-color="#dae0e3"/></linearGradient></defs><path d="M90 92 C82 40 158 40 150 92" fill="none" stroke="#313c2f" stroke-width="8.0" stroke-linecap="round"/>
+<path d="M90 92 C82 40 158 40 150 92" fill="none" stroke="#3f5a68" stroke-width="8" stroke-linecap="round"/>
+<path d="M74 132 C74 96 100 82 120 82 C140 82 166 96 166 132 C166 160 150 176 120 176 C90 176 74 160 74 132Z" fill="url(#s8objectkettlebell1)" stroke="none" stroke-width="1.75"/>
+<ellipse cx="96" cy="118" rx="7" ry="16" fill="#fff" opacity=".3" transform="rotate(20 96 118)"/>
+<rect x="104" y="140" width="32" height="14" rx="4" fill="url(#s8objectkettlebell2)"/></svg>
