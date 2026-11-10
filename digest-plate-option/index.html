@@ -115,8 +115,9 @@
 .bp.pantry .bp-shelf::after{height:.55rem;background:linear-gradient(#e6d9b6,#c7b07a);box-shadow:0 5px 9px rgba(110,92,46,.16)}
 /* Plate card */
 .bp-card{margin:0}
-.bp-plate{position:relative;width:min(100%,16rem);aspect-ratio:1;margin:0 auto 1.1rem;padding:5%;border-radius:50%;background:#fff;box-shadow:0 18px 40px rgba(36,51,65,.12),inset 0 0 0 1px #eceeea}
-.bp-face{position:relative;width:100%;height:100%;border-radius:50%;background:conic-gradient(#f3e9e5 0 90deg,#f4efe2 90deg 180deg,#eef2ed 180deg 360deg)}
+.bp-plate{position:relative;width:16rem;max-width:100%;height:auto;margin:0 auto 1.1rem;border-radius:50%;background:#fff;box-shadow:0 18px 40px rgba(36,51,65,.12),inset 0 0 0 1px #eceeea}
+.bp-plate::before{content:"";display:block;padding-top:100%}
+.bp-face{position:absolute;top:5%;left:5%;right:5%;bottom:5%;border-radius:50%;background:conic-gradient(#f3e9e5 0 90deg,#f4efe2 90deg 180deg,#eef2ed 180deg 360deg)}
 .bp-face::before,.bp-face::after{content:"";position:absolute;background:#fff}
 .bp-face::before{left:50%;top:0;bottom:0;width:3px;margin-left:-1.5px}
 .bp-face::after{left:50%;right:0;top:50%;height:3px;margin-top:-1.5px}
@@ -154,7 +155,7 @@
 </div><script>(function(){
 var root=document.querySelector('.bp');if(!root)return;var IMG='../assets/illustrations/';
 var G={veg:{title:'Veg + fruit',name:'vegetables and fruits',max:5,slots:[[29,17],[14,37],[37,38],[16,60],[36,62]],foods:[['Broccoli','veg-broccoli'],['Carrots','veg-carrot'],['Greens','veg-greens'],['Pepper','veg-pepper'],['Berries','fruit-berries']]},
- pro:{title:'Protein',name:'protein',max:2,slots:[[64,30],[85,37]],foods:[['Chicken','food-chicken-breast'],['Salmon','food-salmon'],['Eggs','food-egg'],['Tofu','food-tofu'],['Lentils','food-lentil-bowl']]},
+ pro:{title:'Protein',name:'protein',max:2,slots:[[64,30],[85,37]],foods:[['Chicken','draft-chicken-drumstick'],['Salmon','food-salmon'],['Eggs','food-egg'],['Tofu','food-tofu'],['Lentils','food-lentil-bowl']]},
  gr:{title:'Whole grains',name:'whole grains',max:2,slots:[[64,62],[85,69]],foods:[['Rice','food-rice-bowl'],['Quinoa','food-quinoa-bowl'],['Bread','food-bread'],['Oats','food-oat-bowl'],['Pasta','food-pasta']]}};
 var plate={veg:[],pro:[],gr:[]},note='';var face=root.querySelector('.bp-face'),store=root.querySelector('.bp-store');
 Object.keys(G).forEach(function(k){var s=document.createElement('div');s.className='bp-shelf';
