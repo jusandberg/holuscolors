@@ -43,14 +43,6 @@
       keywords: ['approach', 'behaviour change', 'behavior change', 'habits', 'motivation', 'routines', 'preferences', 'real life', 'physiology']
     },
     {
-      id: 'page-midlife',
-      type: 'Page',
-      title: 'Midlife nutrition support',
-      summary: 'Practical nutrition support for changing needs, energy, appetite, balanced meals and active lives.',
-      url: '/midlife-nutrition/',
-      keywords: ['midlife', 'perimenopause', 'menopause', 'women 40 plus', 'energy', 'appetite', 'active lifestyle']
-    },
-    {
       id: 'page-glp1',
       type: 'Page',
       title: 'GLP-1 nutrition support',
