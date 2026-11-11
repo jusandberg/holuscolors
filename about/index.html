@@ -117,16 +117,27 @@
 @media(max-width:900px){.ab-hero-grid{grid-template-columns:1fr}.ab-photo{max-width:24rem}}
 .ab-h2{font:800 clamp(1.9rem,4.2vw,3rem)/1.05 Manrope,sans-serif;letter-spacing:-.045em;margin:0 0 1.8rem;max-width:18ch}
 .ab-qtitle{max-width:none;white-space:nowrap;font-size:min(clamp(1.9rem,4.2vw,3rem),6.4vw)}
-.ab-qs{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem;margin:0 0 1.8rem;padding-left:.6rem}
+.ab-qs{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem;margin:0;padding-inline:.6rem;max-width:44rem}
 .ab-q{position:relative;margin:0!important;max-width:min(30rem,85%);padding:.8rem 1.15rem;border-radius:22px 22px 22px 8px;color:#16191c;font:500 clamp(1rem,2vw,1.12rem)/1.4 Inter,sans-serif}
 .ab-q::before{content:"";position:absolute;left:-7px;bottom:0;width:20px;height:20px;background:inherit;border-bottom-right-radius:16px 14px}
 .ab-q::after{content:"";position:absolute;left:-10px;bottom:0;width:10px;height:20px;background:#fff;border-bottom-right-radius:10px}
 .ab-qs.ab-chat .ab-q{opacity:0;transform:translateY(10px) scale(.96);transform-origin:left bottom;transition:opacity .45s ease,transform .5s cubic-bezier(.2,.9,.3,1.2)}
-.ab-qs.ab-chat.ab-in .ab-q{opacity:1;transform:none}
-.ab-qs.ab-chat.ab-in .ab-q:nth-child(2){transition-delay:.5s}
-.ab-qs.ab-chat.ab-in .ab-q:nth-child(3){transition-delay:1s}
+.ab-qs.ab-chat .ab-q.ab-show{opacity:1;transform:none}
+.ab-qs{position:relative}
+.ab-typing{position:absolute;display:flex;gap:.3rem;padding:.85rem 1rem;border-radius:22px 22px 22px 8px;background:#eef0f2;animation:ab-tin .25s ease both}
+.ab-typing.ab-typing-r{background:#243341}
+.ab-typing i{width:.45rem;height:.45rem;border-radius:50%;background:#8a8f95;animation:ab-dot 1s infinite ease-in-out}
+.ab-typing.ab-typing-r i{background:#c9d3da}
+.ab-typing i:nth-child(2){animation-delay:.15s}.ab-typing i:nth-child(3){animation-delay:.3s}
+@keyframes ab-dot{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-.25rem);opacity:1}}
+@keyframes ab-tin{from{opacity:0;transform:scale(.8)}to{opacity:1;transform:none}}
+.ab-reply{align-self:flex-end;margin-top:.6rem!important;background:#243341;color:#fff;border-radius:22px 22px 8px 22px}
+.ab-reply::before{left:auto;right:-7px;border-bottom-right-radius:0;border-bottom-left-radius:16px 14px}
+.ab-reply::after{left:auto;right:-10px;border-bottom-right-radius:0;border-bottom-left-radius:10px}
+.ab-qs.ab-chat .ab-reply{transform-origin:right bottom}
 
-@media(prefers-reduced-motion:reduce){.ab-qs.ab-chat .ab-q{opacity:1;transform:none;transition:none}}
+
+@media(prefers-reduced-motion:reduce){.ab-qs.ab-chat .ab-q{opacity:1;transform:none;transition:none}.ab-typing{display:none}}
 .ab-qlead{font-size:1.05rem;max-width:38rem;margin:0}
 .ab-feel-title{margin-top:clamp(4rem,8vw,6rem)}
 
@@ -142,8 +153,14 @@
 <section class="ab-quote"><div class="section-shell"><p class="eyebrow">The philosophy behind the work</p><h2>The science may be universal. How it fits your life is <em>personal.</em></h2></div></section>
 <section class="ab-ways"><div class="section-shell">
   <p class="eyebrow">Sound familiar?</p><h2 class="ab-h2 ab-qtitle">Maybe you’ve said one of these.</h2>
-  <div class="ab-qs ab-chat"><p class="ab-q" style="background:#eef2ed">“I know what I should eat. I can’t make it stick.”</p><p class="ab-q" style="background:#f3e9e5">“Every plan works for two weeks, then life gets in the way.”</p><p class="ab-q" style="background:#e8eef1">“I’m tired of feeling like I’m doing it wrong.”</p></div><script>(function(){var c=document.querySelector('.ab-chat');if(!c)return;if(!('IntersectionObserver' in window)){c.classList.add('ab-in');return}var o=new IntersectionObserver(function(e){if(e.some(function(x){return x.isIntersecting})){c.classList.add('ab-in');o.disconnect()}},{threshold:.4});o.observe(c);})();</script>
-  <p class="ab-qlead">If any of that sounds like you, you’re exactly who I do this work for. We start with your real week, the busy days included, and find what fits.</p>
+  <div class="ab-qs ab-chat"><p class="ab-q" style="background:#eef2ed">“I know what I should eat. I can’t make it stick.”</p><p class="ab-q" style="background:#f3e9e5">“Every plan works for two weeks, then life gets in the way.”</p><p class="ab-q" style="background:#e8eef1">“I’m tired of feeling like I’m doing it wrong.”</p><p class="ab-q ab-reply">If any of that sounds like you, you’re exactly who I do this work for. We start with your real week, the busy days included, and find what fits.</p></div><script>(function(){var c=document.querySelector('.ab-chat');if(!c)return;var q=[].slice.call(c.querySelectorAll('.ab-q'));
+function all(){q.forEach(function(b){b.classList.add('ab-show')})}
+if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){all();return}
+function step(i){if(i>=q.length)return;var b=q[i],r=b.classList.contains('ab-reply'),d=document.createElement('div');
+ d.className='ab-typing'+(r?' ab-typing-r':'');d.setAttribute('aria-hidden','true');d.innerHTML='<i></i><i></i><i></i>';c.appendChild(d);
+ d.style.top=b.offsetTop+'px';if(r)d.style.right='.6rem';else d.style.left='.6rem';
+ setTimeout(function(){d.remove();b.classList.add('ab-show');setTimeout(function(){step(i+1)},350)},r?1300:900);}
+var o=new IntersectionObserver(function(e){if(e.some(function(x){return x.isIntersecting})){o.disconnect();step(0)}},{threshold:.35});o.observe(c);})();</script>
   <h2 class="ab-h2 ab-feel-title">What I hope you’ll leave our first session feeling.</h2>
   <div class="ab-row" aria-label="Three feelings, swipe to see each">
     <div class="ab-way" style="--tint:#eef2ed"><img src="../assets/illustrations/eat-mug.svg" alt="" width="240" height="200"><h3>Listened to</h3><p>We will talk about your days, your habits and the foods you love first.</p></div>
