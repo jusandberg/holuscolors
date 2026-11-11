@@ -108,8 +108,15 @@
 .ab-ways{padding-block:0 clamp(5rem,10vw,8rem)}
 .ab-row{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
 .ab-way{position:relative;padding:1.4rem 1.4rem 1.5rem;border-radius:24px;background:var(--tint)}
-.ab-way img{position:absolute;top:.6rem;right:.7rem;width:4.6rem;height:auto;margin:0}
-.ab-way h3{font-size:1.2rem;letter-spacing:-.03em;margin:2.6rem 0 .35rem}
+.ab-check{display:block;width:2.3rem;height:2.3rem;overflow:visible}
+.ab-check circle{fill:var(--ck);transform-origin:20px 20px;transform:scale(0)}
+.ab-check path{fill:none;stroke:#fff;stroke-width:3.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:24;stroke-dashoffset:24}
+.ab-row.ab-go .ab-check circle{animation:ab-pop .45s cubic-bezier(.2,.9,.3,1.4) var(--d) forwards}
+.ab-row.ab-go .ab-check path{animation:ab-draw .45s ease calc(var(--d) + .3s) forwards}
+@keyframes ab-pop{to{transform:scale(1)}}
+@keyframes ab-draw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.ab-check circle{transform:none}.ab-check path{stroke-dashoffset:0}.ab-row.ab-go .ab-check *{animation:none}}
+.ab-way h3{font-size:1.2rem;letter-spacing:-.03em;margin:.9rem 0 .35rem}
 .ab-way p{margin:0;color:#55585d;font-size:.95rem;line-height:1.5}
 .ab-dots{display:none}
 @media(max-width:900px){.ab-row{display:flex;gap:.75rem;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:calc(50% - 50vw);padding-inline:max(1rem,calc(50vw - 50%));scroll-padding-inline:max(1rem,calc(50vw - 50%));scrollbar-width:none;-webkit-overflow-scrolling:touch}.ab-row::-webkit-scrollbar{display:none}.ab-way{flex:0 0 78%;max-width:20rem;scroll-snap-align:start}
@@ -164,11 +171,12 @@ function step(i){if(i>=q.length)return;var b=q[i],r=b.classList.contains('ab-rep
 var o=new IntersectionObserver(function(e){if(e.some(function(x){return x.isIntersecting})){o.disconnect();step(0)}},{threshold:.35});o.observe(c);})();</script>
   <h2 class="ab-h2 ab-feel-title">How I hope you’ll feel after.</h2>
   <div class="ab-row" aria-label="Three feelings, swipe to see each">
-    <div class="ab-way" style="--tint:#eef2ed"><img src="../assets/illustrations/eat-mug.svg" alt="" width="240" height="200"><h3>Listened to</h3><p>We will talk about your days, your habits and the foods you love first.</p></div>
-    <div class="ab-way" style="--tint:#f3e9e5"><img src="../assets/illustrations/food-smoothie-bowl.svg" alt="" width="240" height="200"><h3>Lighter</h3><p>One or two things to try this week. Not a 20‑page plan.</p></div>
-    <div class="ab-way" style="--tint:#e8eef1"><img src="../assets/illustrations/plan-open-journal.svg" alt="" width="240" height="200"><h3>Clear</h3><p>You’ll know why each step matters, even when life gets busy.</p></div>
+    <div class="ab-way" style="--tint:#eef2ed;--ck:#71836d;--d:0s"><svg class="ab-check" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18"/><path d="M12.5 20.5l5 5 10-11"/></svg><h3>Listened to</h3><p>We will talk about your days, your habits and the foods you love first.</p></div>
+    <div class="ab-way" style="--tint:#f3e9e5;--ck:#b4877b;--d:.35s"><svg class="ab-check" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18"/><path d="M12.5 20.5l5 5 10-11"/></svg><h3>Lighter</h3><p>One or two things to try this week. Not a 20‑page plan.</p></div>
+    <div class="ab-way" style="--tint:#e8eef1;--ck:#8aa3b0;--d:.7s"><svg class="ab-check" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18"/><path d="M12.5 20.5l5 5 10-11"/></svg><h3>Clear</h3><p>You’ll know why each step matters, even when life gets busy.</p></div>
   </div>
   <div class="ab-dots" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
+  <script>(function(){var g=document.querySelector('.ab-row');if(!g)return;if(!('IntersectionObserver' in window)){g.classList.add('ab-go');return}var o=new IntersectionObserver(function(e){if(e.some(function(x){return x.isIntersecting})){g.classList.add('ab-go');o.disconnect()}},{threshold:.4});o.observe(g);})();</script>
   <script>(function(){var r=document.querySelector('.ab-row'),d=document.querySelectorAll('.ab-dots span');if(!r)return;r.addEventListener('scroll',function(){var c=r.children,best=0,m=1e9;for(var i=0;i<c.length;i++){var x=Math.abs(c[i].getBoundingClientRect().left-r.getBoundingClientRect().left);if(x<m){m=x;best=i}}d.forEach(function(s,i){s.classList.toggle('on',i===best)})},{passive:true});})();</script>
 </div></section>
 <section class="next-step" aria-label="Next step"><div class="section-shell"><div class="next-card"><figure class="next-art"><img src="../assets/food-peas.svg" alt="" width="240" height="200"></figure><div class="next-copy"><p class="eyebrow">Keep exploring</p><h2>See how we can work together.</h2><p>Services, pricing and what to expect from a first session.</p></div><div class="next-chips"><a class="chip-link chip-primary" href="../nutritional-counselling/index.html">Services<svg class="arr arr-right" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3"></path></svg></a><a class="chip-link" href="../nutrition-behaviour-change/index.html">Approach<svg class="arr arr-right" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3"></path></svg></a></div></div></div></section></main>
