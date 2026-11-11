@@ -116,12 +116,21 @@
 .ab-dots{display:flex;justify-content:center;gap:.4rem;margin-top:1rem}.ab-dots span{width:.45rem;height:.45rem;border-radius:999px;background:#d9dadd;transition:width .3s,background .3s}.ab-dots span.on{width:1.3rem;background:#16191c}}
 @media(max-width:900px){.ab-hero-grid{grid-template-columns:1fr}.ab-photo{max-width:24rem}}
 .ab-h2{font:800 clamp(1.9rem,4.2vw,3rem)/1.05 Manrope,sans-serif;letter-spacing:-.045em;margin:0 0 1.8rem;max-width:18ch}
-.ab-qs{display:flex;flex-direction:column;align-items:flex-start;gap:.8rem;margin:0 0 1.8rem}
-.ab-q{margin:0;font:600 clamp(1.1rem,2.4vw,1.4rem)/1.35 Manrope,sans-serif;letter-spacing:-.02em;padding:1.1rem 1.4rem;border-radius:22px;max-width:34rem;margin:0!important}
-.ab-q:nth-child(2){margin-left:clamp(0rem,8vw,6rem)!important}
-.ab-qlead{font-size:1.12rem;max-width:38rem;margin:0}
+.ab-qhead{display:grid;grid-template-columns:max-content minmax(0,24rem);justify-content:start;gap:clamp(2rem,5vw,4rem);align-items:end;margin:0 0 2rem}
+.ab-qhead .ab-h2{margin:0;max-width:none}
+.ab-qs{display:flex;flex-direction:column;align-items:flex-start;gap:.55rem;margin:0;padding-left:.6rem}
+.ab-q{position:relative;margin:0!important;max-width:min(30rem,85%);padding:.8rem 1.15rem;border-radius:22px 22px 22px 8px;color:#16191c;font:500 clamp(1rem,2vw,1.12rem)/1.4 Inter,sans-serif}
+.ab-q::before{content:"";position:absolute;left:-7px;bottom:0;width:20px;height:20px;background:inherit;border-bottom-right-radius:16px 14px}
+.ab-q::after{content:"";position:absolute;left:-10px;bottom:0;width:10px;height:20px;background:#fff;border-bottom-right-radius:10px}
+.ab-qs.ab-chat .ab-q{opacity:0;transform:translateY(10px) scale(.96);transform-origin:left bottom;transition:opacity .45s ease,transform .5s cubic-bezier(.2,.9,.3,1.2)}
+.ab-qs.ab-chat.ab-in .ab-q{opacity:1;transform:none}
+.ab-qs.ab-chat.ab-in .ab-q:nth-child(2){transition-delay:.5s}
+.ab-qs.ab-chat.ab-in .ab-q:nth-child(3){transition-delay:1s}
+@media(max-width:760px){.ab-qhead{grid-template-columns:1fr;gap:.9rem}}
+@media(prefers-reduced-motion:reduce){.ab-qs.ab-chat .ab-q{opacity:1;transform:none;transition:none}}
+.ab-qlead{font-size:1.05rem;max-width:38rem;margin:0}
 .ab-feel-title{margin-top:clamp(4rem,8vw,6rem)}
-@media(max-width:760px){.ab-q:nth-child(2){margin-left:0!important}}
+
 </style>
 <section class="ab-hero"><div class="section-shell ab-hero-grid">
   <figure class="ab-photo"><img src="../assets/juliana-about.jpg" alt="Juliana dos Santos smiling, seated in a warm, relaxed home setting" width="1000" height="1216"></figure>
@@ -133,9 +142,8 @@
 </div></section>
 <section class="ab-quote"><div class="section-shell"><p class="eyebrow">The philosophy behind the work</p><h2>The science may be universal. How it fits your life is <em>personal.</em></h2></div></section>
 <section class="ab-ways"><div class="section-shell">
-  <p class="eyebrow">Sound familiar?</p><h2 class="ab-h2">Maybe you’ve said one of these.</h2>
-  <div class="ab-qs"><p class="ab-q" style="background:#eef2ed">“I know what I should eat. I can’t make it stick.”</p><p class="ab-q" style="background:#f3e9e5">“Every plan works for two weeks, then life gets in the way.”</p><p class="ab-q" style="background:#e8eef1">“I’m tired of feeling like I’m doing it wrong.”</p></div>
-  <p class="ab-qlead">If any of that sounds like you, you’re exactly who I do this work for. We start with your real week, the busy days included, and find what fits.</p>
+  <p class="eyebrow">Sound familiar?</p><div class="ab-qhead"><h2 class="ab-h2">Maybe you’ve<br> said one of these.</h2><p class="ab-qlead">If any of that sounds like you, you’re exactly who I do this work for. We start with your real week, the busy days included, and find what fits.</p></div>
+  <div class="ab-qs ab-chat"><p class="ab-q" style="background:#eef2ed">“I know what I should eat. I can’t make it stick.”</p><p class="ab-q" style="background:#f3e9e5">“Every plan works for two weeks, then life gets in the way.”</p><p class="ab-q" style="background:#e8eef1">“I’m tired of feeling like I’m doing it wrong.”</p></div><script>(function(){var c=document.querySelector('.ab-chat');if(!c)return;if(!('IntersectionObserver' in window)){c.classList.add('ab-in');return}var o=new IntersectionObserver(function(e){if(e.some(function(x){return x.isIntersecting})){c.classList.add('ab-in');o.disconnect()}},{threshold:.4});o.observe(c);})();</script>
   <h2 class="ab-h2 ab-feel-title">What I hope you’ll leave our first session feeling.</h2>
   <div class="ab-row" aria-label="Three feelings, swipe to see each">
     <div class="ab-way" style="--tint:#eef2ed"><img src="../assets/illustrations/eat-mug.svg" alt="" width="240" height="200"><h3>Listened to</h3><p>We will talk about your days, your habits and the foods you love first.</p></div>
