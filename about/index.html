@@ -140,7 +140,7 @@
 @media(prefers-reduced-motion:reduce){.ab-qs.ab-chat .ab-q{opacity:1;transform:none;transition:none}.ab-typing{display:none}}
 .ab-qlead{font-size:1.05rem;max-width:38rem;margin:0}
 .ab-feel-title{margin-top:clamp(4rem,8vw,6rem)}
-@media(min-width:700px){.ab-feel-title{max-width:none;white-space:nowrap;font-size:min(clamp(1.9rem,4.2vw,3rem),3.9vw)}}
+.ab-feel-title{max-width:none;white-space:nowrap;font-size:min(clamp(1.9rem,4.2vw,3rem),7vw)}
 
 </style>
 <section class="ab-hero"><div class="section-shell ab-hero-grid">
@@ -162,7 +162,7 @@ function step(i){if(i>=q.length)return;var b=q[i],r=b.classList.contains('ab-rep
  d.style.top=b.offsetTop+'px';if(r)d.style.right='.6rem';else d.style.left='.6rem';
  setTimeout(function(){d.remove();b.classList.add('ab-show');setTimeout(function(){step(i+1)},350)},r?1300:900);}
 var o=new IntersectionObserver(function(e){if(e.some(function(x){return x.isIntersecting})){o.disconnect();step(0)}},{threshold:.35});o.observe(c);})();</script>
-  <h2 class="ab-h2 ab-feel-title">What I hope you’ll leave our first session feeling.</h2>
+  <h2 class="ab-h2 ab-feel-title">How I hope you’ll feel after.</h2>
   <div class="ab-row" aria-label="Three feelings, swipe to see each">
     <div class="ab-way" style="--tint:#eef2ed"><img src="../assets/illustrations/eat-mug.svg" alt="" width="240" height="200"><h3>Listened to</h3><p>We will talk about your days, your habits and the foods you love first.</p></div>
     <div class="ab-way" style="--tint:#f3e9e5"><img src="../assets/illustrations/food-smoothie-bowl.svg" alt="" width="240" height="200"><h3>Lighter</h3><p>One or two things to try this week. Not a 20‑page plan.</p></div>

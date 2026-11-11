@@ -261,6 +261,22 @@
       url: '/digest/#n-zinc',
       keywords: ['immune system', 'wound healing', 'taste', 'smell', 'meat', 'fish', 'poultry', 'beans', 'nuts']
     },
+    {
+      id: 'nutrient-vitc',
+      type: 'Nutrient',
+      title: 'Vitamin C',
+      summary: 'Vitamin C supports collagen, healing, immunity and iron absorption from plant foods.',
+      url: '/digest/#n-vitc',
+      keywords: ['vitamin c', 'immune system', 'collagen', 'iron absorption', 'oranges', 'citrus', 'strawberries', 'peppers', 'broccoli', 'kiwi']
+    },
+    {
+      id: 'nutrient-vita',
+      type: 'Nutrient',
+      title: 'Vitamin A',
+      summary: 'Vitamin A supports vision in low light, immunity, skin and cell growth.',
+      url: '/digest/#n-vita',
+      keywords: ['vitamin a', 'vision', 'eyes', 'immune system', 'skin', 'carrots', 'sweet potatoes', 'leafy greens', 'eggs', 'dairy']
+    },
 
     {
       id: 'faq-first-session',
