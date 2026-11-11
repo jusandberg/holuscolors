@@ -909,3 +909,9 @@ html, body { overflow-x: clip; }
 main section:has(+ .next-step), body > section:has(+ .next-step) { padding-bottom: clamp(1.5rem, 3vw, 2.5rem); }
 .behaviour-steps.section-pad { padding-block: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2.5rem); }
 .behaviour-steps + .behaviour-factors.section-pad { padding-top: clamp(1.5rem, 3vw, 2.5rem); }
+
+/* FAQ: heading spans the page above the questions, so it stays large on one line */
+.faq-grid { grid-template-columns: minmax(0, 1fr); gap: clamp(1.5rem, 3vw, 2.5rem); }
+.faq-grid .accordion { max-width: 52rem; }
+.faq-grid .section-heading h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); margin-bottom: 0; }
+.faq-grid .section-heading { margin-bottom: 0; }

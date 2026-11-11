@@ -5,6 +5,7 @@ Static site on GitHub Pages (served from `main`). Self-contained HTML, no build 
 ## Layout rules (from the site owner, always follow)
 
 - **One line for headings and their sentence.** A section heading stays on one line, and the sentence directly under it stays on one line, at every screen size where that is readable. If it can't fit on phones, scale the heading down (e.g. `white-space:nowrap; font-size:min(…, Nvw)`); if a sentence still won't fit, suggest shorter wording rather than letting it wrap.
+- `fit-headings.js` (loaded on every page) enforces the heading rule automatically: it keeps each `h1`/`h2` on one line, shrinking it only as needed (floor 16px), and puts a one-sentence intro on one line when it fits. New pages must load it.
 - **Keep white space tight.** Avoid large gaps between sections, especially where two `section-pad` sections meet. Check the gap at desktop and phone widths.
 - Check every layout change at desktop (1280px) and phone (390px) before pushing.
 
