@@ -63,6 +63,7 @@
         .relationship-map { display: grid; grid-template-columns: 1fr auto 1fr auto .68fr; align-items: center; gap: 1rem; margin-top: 2.5rem; }
         .relationship-map > div { min-height: 7rem; padding: 1.05rem; border-top: 1px solid rgba(255,255,255,.25); }
         .relationship-map p { color: rgba(255,255,255,.65); }
+.rel-fig { display: inline-block; width: 2.4rem; height: auto; margin: -.6rem 0 -.6rem .35rem; vertical-align: middle; transform: rotate(-14deg); filter: drop-shadow(0 6px 10px rgba(0,0,0,.35)); }
         .relationship-map > b { color: var(--sage-light); font-size: 1.6rem; }
         .relationship-result { display: flex; width: 100%; max-width: 13rem; min-height: 5.8rem !important; align-items: center; justify-content: flex-start; gap: .8rem; background: var(--sage-deep); border-radius: var(--radius); border-top: 0 !important; }
         .relationship-result svg { flex: 0 0 auto; width: 1.45rem; fill: none; stroke: var(--sage-light); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -95,14 +96,14 @@
           <div class="section-shell">
             <div class="behaviour-relationship-copy"><p class="eyebrow">Physiology + behaviour</p><h1>Your biology and your life both matter.</h1><p>Nutrition Counselling can consider physiological needs while also paying attention to the circumstances in which eating actually happens.</p><p>A recommendation is only useful if it is nutritionally appropriate and realistic enough to put into practice.</p></div>
             <div class="relationship-map reveal" aria-label="Physiology plus real life leads to practical nutrition">
-              <div><h3>Physiology</h3><p>appetite · energy · nutritional needs · life stage</p></div><b>+</b>
+              <div class="rel-phys"><h3>Physiology <img class="rel-fig" src="../assets/float-fig.svg" alt="" width="120" height="120"></h3><p>appetite · energy · nutritional needs · life stage</p></div><b>+</b>
               <div><h3>Real life</h3><p>routines · preferences · environment · motivation</p></div><b>→</b>
               <div class="relationship-result"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5 9.2 17 19 7"></path></svg><h3>Practical nutrition</h3></div>
             </div>
           </div>
         </section>
 
-        <section class="behaviour-steps section-pad" aria-label="Three steps"><div class="section-shell"><ul class="venn" aria-label="See, choose and adapt, with you at the centre"><li class="venn-circle v1"><img src="../assets/food-tea.svg" alt="" width="240" height="200"><strong>See</strong><span>Understand what’s happening.</span></li><li class="venn-circle v2"><img src="../assets/food-apple.svg" alt="" width="240" height="200"><strong>Choose</strong><span>Focus on what matters.</span></li><li class="venn-circle v3"><img src="../assets/food-avocado.svg" alt="" width="240" height="200"><strong>Adapt</strong><span>Adjust as you go.</span></li><li class="venn-core" aria-hidden="true">you</li></ul></div></section>
+        <section class="behaviour-steps section-pad" aria-label="Three steps"><div class="section-shell"><ul class="venn" aria-label="See, choose and adapt, with you at the centre"><li class="venn-circle v1"><strong>See</strong><span>Understand what’s happening.</span></li><li class="venn-circle v2"><strong>Choose</strong><span>Focus on what matters.</span></li><li class="venn-circle v3"><strong>Adapt</strong><span>Adjust as you go.</span></li><li class="venn-core" aria-hidden="true">you</li></ul></div></section>
 
         <section class="behaviour-factors section-pad">
           <div class="section-shell"><style>.behaviour-factors .e-ic{flex:none;width:4.2rem;height:auto;margin:-.5rem .2rem 0 -.4rem}</style>

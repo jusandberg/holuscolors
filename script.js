@@ -82,7 +82,7 @@ whoTiles.forEach((tile) => {
     'nutritional-counselling': [['.page-hero', 'cherries', 'r', '3rem', 96, 'r', '6.4rem', 58, -8], ['.services', 'pineapple', 'r', '2.5rem', 84, 'r', '1.6rem', 50, 12], ['.expect', 'lemon', 'l', 'calc(100% - 7rem)', 84, 'l', '1.6rem', 50, -12], ['.expect', 'carrot', 'r', '4rem', 104, 'r', '2rem', 60, -16]],
     faq: [['#faq', 'fig', 'r', '2rem', 96, 'r', '1.6rem', 60, 10]],
     about: [['.ab-hero', 'cherries', 'r', '4rem', 92, 'r', '9rem', 58, -10], ['.ab-quote', 'lemon', 'l', 'calc(100% - 8rem)', 88, 'r', '2.4rem', 54, 20]],
-    'nutrition-behaviour-change': [['.behaviour-relationship', 'watermelon', 'r', '3rem', 110, 'r', '1rem', 64, -14], ['.behaviour-factors', 'fig', 'l', 'calc(100% - 10rem)', 100, 'r', '1.6rem', 58, -14]],
+    'nutrition-behaviour-change': [['.behaviour-relationship', 'watermelon', 'r', '3rem', 110, 'r', '1rem', 64, -14]],
     digest: [['.next-step', 'carrot', 'r', '.5rem', 80, 'r', '0rem', 50, 0]],
   };
 
