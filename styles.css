@@ -915,3 +915,9 @@ main section:has(+ .next-step), body > section:has(+ .next-step) { padding-botto
 .faq-grid .accordion { max-width: 52rem; }
 .faq-grid .section-heading h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); margin-bottom: 0; }
 .faq-grid .section-heading { margin-bottom: 0; }
+
+/* Venn labels centred in each circle's own (non-overlapping) area */
+.venn .venn-circle { justify-content: center; }
+.venn .v1 { padding: 0 0 20.6cqw 0; }
+.venn .v2 { justify-content: flex-start; padding: 26.5cqw 17.8cqw 0 0; }
+.venn .v3 { justify-content: flex-start; padding: 26.5cqw 0 0 17.8cqw; }
