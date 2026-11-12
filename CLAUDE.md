@@ -17,5 +17,6 @@ Static site on GitHub Pages (served from `main`). Self-contained HTML, no build 
 
 ## Content
 
+- Juliana’s title is **Nutrition Counsellor** (Canadian spelling), not Nutritionist.
 - Plain, natural wording. Canadian spelling. Never name, suggest or imply a diagnosis or condition.
 - Every page keeps `<meta name="robots" content="noindex, nofollow">`.
