@@ -169,7 +169,7 @@ render();})();</script></section>
 .pw.section-pad{padding-top:clamp(1.5rem,3vw,2.5rem)}
 @media(min-width:1000px){.pw .nutri-head p:not(.eyebrow){max-width:none;white-space:nowrap}}
 .pw .section-shell{max-width:62rem}
-.pw-wrap{display:grid;grid-template-columns:minmax(0,1fr) 15.5rem;gap:clamp(1rem,3vw,1.75rem);align-items:start;margin-top:1.5rem}
+.pw-wrap{display:grid;grid-template-columns:minmax(0,1fr) 16.5rem;gap:clamp(1rem,3vw,1.75rem);align-items:start;margin-top:1.5rem}
 .pw-store{padding:1.1rem 1.1rem .9rem;border-radius:28px;background:linear-gradient(#fdfbf6,#f6f0e3);box-shadow:inset 0 0 0 1px #ece3cf,0 18px 40px rgba(36,51,65,.08)}
 .pw-shelf{padding:.45rem 0 .65rem}.pw-shelf + .pw-shelf{margin-top:.5rem}
 .pw-shelf h3{display:flex;justify-content:space-between;margin:0 .2rem .35rem;color:#6e6e73;font:800 .7rem/1 Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase}
@@ -185,19 +185,32 @@ render();})();</script></section>
 .pw-food[aria-pressed="true"] img{transform:scale(1.06)}
 .pw-food:focus-visible{outline:2px solid var(--sage);outline-offset:2px;border-radius:12px}
 .pw-card{position:sticky;top:5.5rem;margin:0;padding:1.4rem 1.2rem 1.2rem;border-radius:28px;background:#fff;box-shadow:inset 0 0 0 1px #eceeea,0 18px 40px rgba(36,51,65,.10);text-align:center}
-.pw-ring{position:relative;width:9.5rem;margin:0 auto .8rem}
+.pw-ring{position:relative;width:9rem;margin:0 auto .8rem}
 .pw-ring svg{display:block;width:100%;height:auto;transform:rotate(-90deg)}
 .pw-ring circle{fill:none;stroke-width:10;stroke-linecap:round}
 .pw-ring .pw-bg{stroke:#eef2ed}.pw-ring .pw-fg{stroke:url(#pw-g);transition:stroke-dashoffset .6s cubic-bezier(.2,.7,.2,1)}
 .pw-num{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;font:800 2.6rem/1 Manrope,sans-serif;letter-spacing:-.05em;color:var(--ink)}
 .pw-num small{margin-top:.25rem;color:#6e6e73;font:700 .7rem/1 Manrope,sans-serif;letter-spacing:.1em;text-transform:uppercase}
 .pw-card h3{margin:0;font:800 clamp(1.15rem,2.4vw,1.4rem)/1.15 Manrope,sans-serif;letter-spacing:-.03em}
+.pw-cols{display:flex;justify-content:center;gap:.45rem;margin:.85rem 0 0;padding:0;list-style:none}
+.pw-cols li{display:flex;flex-direction:column;align-items:center;gap:.25rem;width:2.6rem;color:#6e6e73;font:700 .6rem/1.1 Manrope,sans-serif;text-align:center}
+.pw-cols i{display:block;width:1.15rem;height:1.15rem;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 2px var(--c);transition:background .35s ease,transform .35s cubic-bezier(.2,.9,.3,1.35)}
+.pw-cols li.on i{background:var(--c);transform:scale(1.12)}.pw-cols li.on{color:var(--ink)}
+.pw-brings{min-height:4.6rem;margin:.9rem 0 0;padding:.75rem .8rem;border-radius:16px;background:#f6f7f4;color:#3a3f44;font-size:.82rem;line-height:1.4;text-align:left}
+.pw-brings b{display:block;margin-bottom:.15rem;color:var(--ink);font:800 .8rem Manrope,sans-serif}
+.pw-brings[hidden]{display:none}
 .pw-reset{margin-top:.9rem;padding:.45rem 1rem;border:1px solid #e1e5e0;border-radius:999px;background:#fff;color:var(--ink);font:700 .78rem Manrope,sans-serif;cursor:pointer}
 .pw-reset:hover{background:#f5f6f4}.pw-reset[hidden]{display:none}
+.pw-research{margin-top:.6rem;color:var(--muted);font-size:.8rem}
+.pw-research summary{cursor:pointer;color:var(--sage-deep);font:700 .8rem Manrope,sans-serif}
+.pw-research ul{margin:.5rem 0 0;padding-left:1.1rem}.pw-research li{margin:.2rem 0}
 @media(max-width:820px){.pw-wrap{grid-template-columns:1fr}.pw-row{grid-template-columns:repeat(3,minmax(0,1fr))}
- .pw-card{order:-1;position:sticky;top:4.25rem;z-index:3;display:flex;align-items:center;gap:.9rem;padding:.7rem .9rem;text-align:left;border-radius:22px;background:rgba(255,255,255,.94);backdrop-filter:blur(8px)}
- .pw-ring{width:4.6rem;margin:0;flex:none}.pw-num{font-size:1.45rem}.pw-num small{display:none}.pw-card h3{font-size:1rem}.pw-reset{margin:0 0 0 auto;flex:none}}
-@media(prefers-reduced-motion:reduce){.pw-food,.pw-food img,.pw-food::after,.pw-ring .pw-fg{transition:none}}
+ .pw-card{order:-1;position:sticky;top:4.25rem;z-index:3;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:.25rem .8rem;padding:.7rem .9rem;text-align:left;border-radius:22px;background:rgba(255,255,255,.95);backdrop-filter:blur(8px)}
+ .pw-ring{width:4.4rem;margin:0;grid-row:span 2}.pw-num{font-size:1.4rem}.pw-num small{display:none}.pw-card h3{font-size:1rem}
+ .pw-cols{grid-column:2;justify-content:flex-start;gap:.3rem;margin:0}.pw-cols li{width:auto}.pw-cols li span{display:none}.pw-cols i{width:.9rem;height:.9rem}
+ .pw-reset{grid-column:3;grid-row:1;margin:0}
+ .pw-brings{grid-column:1/-1;min-height:0;margin:.35rem 0 0;padding:.55rem .7rem;font-size:.78rem}}
+@media(prefers-reduced-motion:reduce){.pw-food,.pw-food img,.pw-food::after,.pw-ring .pw-fg,.pw-cols i{transition:none}}
 </style><div class="section-shell">
 <header class="nutri-head"><p class="eyebrow">Try it</p><h2 id="pw-title" style="margin:.7rem 0 .6rem;font-size:clamp(2.1rem,5vw,3.2rem);line-height:1;letter-spacing:-.05em">Count your plants.</h2><p>Tap every plant you’ve eaten this week. Different plants feed different gut bacteria.</p></header>
 <div class="pw-wrap">
@@ -205,32 +218,100 @@ render();})();</script></section>
  <div class="pw-card">
   <div class="pw-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="pw-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c7d2c4"/><stop offset="1" stop-color="#71836d"/></linearGradient></defs><circle class="pw-bg" cx="60" cy="60" r="52"/><circle class="pw-fg" cx="60" cy="60" r="52" stroke-dasharray="326.7" stroke-dashoffset="326.7"/></svg><div class="pw-num"><span data-pw-n>0</span><small>of 30</small></div></div>
   <div aria-live="polite"><h3 data-pw-head>Tap the plants you’ve had.</h3></div>
+  <ul class="pw-cols" aria-label="Colours so far"></ul>
+  <p class="pw-brings" data-pw-brings aria-live="polite" hidden></p>
   <button type="button" class="pw-reset" hidden>Start over</button>
  </div>
 </div>
-<p class="nutri-note">In the <a href="https://jacobsschool.ucsd.edu/news/release/2543" target="_blank" rel="noopener">American Gut Project</a>, people who ate more than 30 different plants a week had a wider mix of gut bacteria than people who ate 10 or fewer. It’s a link the researchers found, not a rule. Nothing you tap is saved.</p>
+<p class="nutri-note">In the American Gut Project, people who ate more than 30 different plants a week had a wider mix of gut bacteria than people who ate 10 or fewer. It’s a link the researchers found, not a rule. Nothing you tap is saved.</p>
+<details class="pw-research"><summary>The research behind this</summary><ul>
+<li>30 plants a week: McDonald and others, <a href="https://jacobsschool.ucsd.edu/news/release/2543" target="_blank" rel="noopener">American Gut Project</a>, mSystems, 2018.</li>
+<li>Different fibres, different bacteria: Louis and others, <a href="https://www.news-medical.net/news/20261101/The-type-of-fiber-you-eat-shapes-how-gut-bacteria-feed-and-work-together.aspx" target="_blank" rel="noopener">Dietary fibre complexity and the gut microbiota</a>, Proceedings of the Nutrition Society, 2021.</li>
+<li>Anthocyanins: Eker and others, <a href="https://core.ac.uk/download/287362367.pdf" target="_blank" rel="noopener">A review of factors affecting anthocyanin bioavailability</a>, Foods, 2020.</li>
+<li>Glucosinolates: Bouranis and others, <a href="https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2021.748433/full" target="_blank" rel="noopener">Metabolic fate of dietary glucosinolates: a role for the microbiome</a>, Frontiers in Nutrition, 2021.</li>
+<li>Almonds: Creedon and others, <a href="https://medicalxpress.com/news/2022-10-snacking-almonds-boosts-gut-health.pdf" target="_blank" rel="noopener">almonds and butyrate</a>, American Journal of Clinical Nutrition, 2022.</li>
+<li>Herbs and spices: Penn State, <a href="https://www.psu.edu/news/research/story/peanuts-and-herbs-and-spices-may-positively-impact-gut-microbiome" target="_blank" rel="noopener">herbs, spices and the gut microbiome</a>, Journal of Nutrition, 2022.</li>
+<li>Tomatoes: Wu and others, <a href="https://pubs.rsc.org/en/content/articlehtml/2023/fo/d3fo02849f" target="_blank" rel="noopener">processed tomatoes and carotenoid release</a>, Food &amp; Function, 2023.</li>
+<li>Ellagitannins: Selma and others, <a href="https://www.frontiersin.org/articles/10.3389/fmicb.2017.01521/full" target="_blank" rel="noopener">gut bacteria that make urolithins</a>, Frontiers in Microbiology, 2017.</li>
+</ul></details>
 </div><script>(function(){
 var root=document.querySelector('.pw');if(!root)return;var IMG='../assets/illustrations/',GOAL=30;
-var G=[['Vegetables',[['Broccoli','veg-broccoli'],['Carrots','veg-carrot'],['Greens','veg-greens'],['Tomatoes','veg-tomato'],['Peppers','veg-pepper'],['Sweet potato','veg-sweet-potato'],['Mushrooms','veg-mushroom'],['Onions','veg-onion'],['Garlic','veg-garlic'],['Cauliflower','veg-cauliflower'],['Kale','veg-kale'],['Zucchini','veg-zucchini']]],
- ['Fruit',[['Apples','fruit-apple'],['Bananas','fruit-banana'],['Blueberries','fruit-blueberries'],['Oranges','fruit-orange'],['Pears','fruit-pear'],['Grapes','fruit-grapes'],['Kiwi','fruit-kiwi'],['Mango','fruit-mango'],['Strawberries','fruit-strawberry'],['Cherries','fruit-cherries'],['Avocado','fruit-avocado'],['Plums','fruit-plum']]],
- ['Whole grains',[['Oats','food-oat-bowl'],['Brown rice','food-rice-bowl'],['Quinoa','food-quinoa-bowl'],['Barley','food-barley'],['Whole-grain bread','food-bread'],['Popcorn','food-popcorn']]],
- ['Beans + lentils',[['Lentils','food-lentil-bowl'],['Chickpeas','food-chickpeas'],['Black beans','food-beans-can'],['Peas','veg-peas'],['Tofu','food-tofu'],['Tempeh','food-tempeh']]],
- ['Nuts + seeds',[['Almonds','food-almond'],['Walnuts','food-walnuts'],['Cashews','food-cashews'],['Pistachios','food-pistachios'],['Chia seeds','food-chia-pudding'],['Coconut','food-coconut']]],
- ['Herbs + spices',[['Basil','herb-basil'],['Mint','herb-mint'],['Rosemary','herb-rosemary'],['Cinnamon','spice-cinnamon'],['Ginger','spice-ginger'],['Turmeric','food-turmeric']]]];
-var on={},store=root.querySelector('.pw-store');
+var C={r:['Red','#ad6459'],o:['Orange + yellow','#c7b07a'],g:['Green','#71836d'],p:['Blue + purple','#9c8aa2'],w:['White + tan','#c9b99a']};
+var CS={r:'Red',o:'Orange',g:'Green',p:'Purple',w:'Tan'};
+var G=[['Vegetables',[
+ ['Broccoli','veg-broccoli','g','Glucosinolates. Cooking switches off the plant’s own enzyme, so gut bacteria do more of the work of turning them into sulforaphane.'],
+ ['Carrots','veg-carrot','o','Beta-carotene, the orange pigment your body can turn into vitamin A.'],
+ ['Greens','veg-greens','g','Fibre, folate and vitamin K, all in one leafy handful.'],
+ ['Tomatoes','veg-tomato','r','Lycopene, the red pigment. In a lab study, cooked tomatoes released more of it than raw.'],
+ ['Peppers','veg-pepper','r','Vitamin C, plus the carotenoids that give peppers their colour.'],
+ ['Sweet potato','veg-sweet-potato','o','Beta-carotene and fibre, especially with the skin on.'],
+ ['Mushrooms','veg-mushroom','w','Beta-glucans, a fibre gut bacteria can ferment.'],
+ ['Onions','veg-onion','w','Fructans, a fibre that passes through to your colon, where gut bacteria ferment it.'],
+ ['Garlic','veg-garlic','w','Fructans, the same fibre found in onions, plus its sharp sulphur compounds.'],
+ ['Cauliflower','veg-cauliflower','w','Glucosinolates, just like its cousin broccoli.'],
+ ['Kale','veg-kale','g','Glucosinolates, plus carotenoids hiding under the green.'],
+ ['Zucchini','veg-zucchini','g','Fibre and water, with most of the colour in the skin.']]],
+ ['Fruit',[
+ ['Apples','fruit-apple','r','Pectin, a soluble fibre that gut bacteria ferment.'],
+ ['Bananas','fruit-banana','o','Resistant starch when they’re a little green. It reaches your colon and feeds gut bacteria.'],
+ ['Blueberries','fruit-blueberries','p','Anthocyanins, the blue-purple pigment. Very little is absorbed. Some of the rest reaches your colon, where gut bacteria break it down.'],
+ ['Oranges','fruit-orange','o','Vitamin C, plus pectin in the white pith.'],
+ ['Pears','fruit-pear','g','Fibre, with a lot of it in the skin.'],
+ ['Grapes','fruit-grapes','p','Anthocyanins in the darker skins.'],
+ ['Kiwi','fruit-kiwi','g','Vitamin C and fibre, skin and seeds included.'],
+ ['Mango','fruit-mango','o','Beta-carotene and vitamin C.'],
+ ['Strawberries','fruit-strawberry','r','Ellagitannins. Gut bacteria turn them into compounds called urolithins, and how much varies from person to person.'],
+ ['Cherries','fruit-cherries','r','Anthocyanins, which give them their deep red.'],
+ ['Avocado','fruit-avocado','g','Fibre, plus mostly unsaturated fat.'],
+ ['Plums','fruit-plum','p','Anthocyanins in the skin, plus fibre.']]],
+ ['Whole grains',[
+ ['Oats','food-oat-bowl','w','Beta-glucan, a soluble fibre that turns into a gel.'],
+ ['Brown rice','food-rice-bowl','w','The bran is kept, so you get its fibre and B vitamins.'],
+ ['Quinoa','food-quinoa-bowl','w','Fibre and plant protein.'],
+ ['Barley','food-barley','w','Beta-glucan, the same gel-forming fibre as oats.'],
+ ['Whole-grain bread','food-bread','w','Arabinoxylans, a cereal fibre gut bacteria ferment.'],
+ ['Popcorn','food-popcorn','w','Yes, it counts. It’s a whole grain.']]],
+ ['Beans + lentils',[
+ ['Lentils','food-lentil-bowl','w','Fibre and resistant starch that reach your colon and feed gut bacteria.'],
+ ['Chickpeas','food-chickpeas','w','Fibre, plus sugars only gut bacteria can break down. That’s where some gas comes from, and it’s normal.'],
+ ['Black beans','food-beans-can','p','Fibre, plus anthocyanins in the dark skin.'],
+ ['Peas','veg-peas','g','Fibre and plant protein.'],
+ ['Tofu','food-tofu','w','Plant protein and soy isoflavones.'],
+ ['Tempeh','food-tempeh','w','Fermented whole soybeans, so you keep the fibre of the whole bean.']]],
+ ['Nuts + seeds',[
+ ['Almonds','food-almond','w','In a 2022 trial, eating 56 g a day for four weeks raised butyrate, a fatty acid gut bacteria make.'],
+ ['Walnuts','food-walnuts','w','Ellagitannins, which gut bacteria turn into urolithins, plus plant omega-3s.'],
+ ['Cashews','food-cashews','w','Magnesium, plant fats and some fibre.'],
+ ['Pistachios','food-pistachios','g','Fibre and plant protein.'],
+ ['Chia seeds','food-chia-pudding','w','Soluble fibre that swells into a gel, plus plant omega-3s.'],
+ ['Coconut','food-coconut','w','Fibre in the white flesh.']]],
+ ['Herbs + spices',[
+ ['Basil','herb-basil','g','Herbs count too. Each one adds a different set of plant compounds.'],
+ ['Mint','herb-mint','g','Herbs count too, even a small handful.'],
+ ['Rosemary','herb-rosemary','g','Polyphenols such as rosmarinic acid.'],
+ ['Cinnamon','spice-cinnamon','w','In a 2022 study, adding ¾ to 1½ teaspoons of mixed herbs and spices a day led to more varied gut bacteria.'],
+ ['Ginger','spice-ginger','w','Gingerols, the compounds behind its bite.'],
+ ['Turmeric','food-turmeric','o','Curcumin, its golden pigment.']]]];
+var on={},last=null,store=root.querySelector('.pw-store'),cols=root.querySelector('.pw-cols');
+cols.innerHTML=Object.keys(C).map(function(k){return '<li data-c="'+k+'" title="'+C[k][0]+'"><i style="--c:'+C[k][1]+'"></i><span>'+CS[k]+'</span></li>'}).join('');
 G.forEach(function(g,gi){var s=document.createElement('div');s.className='pw-shelf';
- s.innerHTML='<h3>'+g[0]+'<b data-pw-g="'+gi+'"></b></h3><ul class="pw-row">'+g[1].map(function(f){return '<li><button type="button" class="pw-food" aria-pressed="false" data-g="'+gi+'" data-f="'+f[0]+'"><img src="'+IMG+f[1]+'.svg" alt="" width="240" height="200" loading="lazy"><span>'+f[0]+'</span></button></li>'}).join('')+'</ul>';store.appendChild(s);});
-function render(){var n=0,per=G.map(function(){return 0});
- root.querySelectorAll('.pw-food').forEach(function(b){var k=b.dataset.g+'|'+b.dataset.f,v=!!on[k];b.setAttribute('aria-pressed',String(v));if(v){n++;per[b.dataset.g]++;}});
+ s.innerHTML='<h3>'+g[0]+'<b data-pw-g="'+gi+'"></b></h3><ul class="pw-row">'+g[1].map(function(f,fi){return '<li><button type="button" class="pw-food" aria-pressed="false" data-g="'+gi+'" data-i="'+fi+'"><img src="'+IMG+f[1]+'.svg" alt="" width="240" height="200" loading="lazy"><span>'+f[0]+'</span></button></li>'}).join('')+'</ul>';store.appendChild(s);});
+function render(){var n=0,per=G.map(function(){return 0}),cs={};
+ root.querySelectorAll('.pw-food').forEach(function(b){var k=b.dataset.g+'|'+b.dataset.i,v=!!on[k];b.setAttribute('aria-pressed',String(v));if(v){n++;per[b.dataset.g]++;cs[G[b.dataset.g][1][b.dataset.i][2]]=1;}});
  root.querySelectorAll('[data-pw-g]').forEach(function(e){var c=per[e.dataset.pwG];e.textContent=c?c:'';});
+ cols.querySelectorAll('li').forEach(function(li){li.classList.toggle('on',!!cs[li.dataset.c])});
  root.querySelector('[data-pw-n]').textContent=n;
  root.querySelector('.pw-fg').setAttribute('stroke-dashoffset',(326.7*(1-Math.min(n,GOAL)/GOAL)).toFixed(1));
  var h='Tap the plants you’ve had.';
  if(n>=GOAL)h='30 or more. That’s great variety.';else if(n>=20)h='Almost at 30.';else if(n>=10)h='Nice variety.';else if(n>0)h='A good start.';
- var groups=per.filter(function(c){return c}).length;if(n>=3&&n<GOAL&&groups<4)h+=' Try another group.';
- root.querySelector('[data-pw-head]').textContent=h;root.querySelector('.pw-reset').hidden=!n;}
-root.querySelectorAll('.pw-food').forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.g+'|'+b.dataset.f;if(on[k])delete on[k];else on[k]=1;render();})});
-root.querySelector('.pw-reset').addEventListener('click',function(){on={};render();});
+ var groups=per.filter(function(c){return c}).length,colours=Object.keys(cs).length;
+ if(n>=4&&n<GOAL){if(colours<3)h+=' Try another colour.';else if(groups<4)h+=' Try another shelf.';}
+ root.querySelector('[data-pw-head]').textContent=h;
+ var br=root.querySelector('[data-pw-brings]');
+ if(last&&on[last]){var f=G[last.split('|')[0]][1][last.split('|')[1]];br.innerHTML='<b>'+f[0]+'</b>'+f[3];br.hidden=false;}else br.hidden=true;
+ root.querySelector('.pw-reset').hidden=!n;}
+root.querySelectorAll('.pw-food').forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.g+'|'+b.dataset.i;if(on[k]){delete on[k];last=null;}else{on[k]=1;last=k;}render();})});
+root.querySelector('.pw-reset').addEventListener('click',function(){on={};last=null;render();});
 render();})();</script></section>
 <section class="next-step" aria-label="Next step"><div class="section-shell"><div class="next-card"><figure class="next-art"><img src="../assets/food-wheat.svg" alt="" width="240" height="200"></figure><div class="next-copy"><p class="eyebrow">Keep exploring</p><h2>Want support that fits your life?</h2><p>See how Nutrition Counselling works and how we can work together.</p></div><div class="next-chips"><a class="chip-link chip-primary" href="../nutritional-counselling/index.html">Services<svg class="arr arr-right" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3"></path></svg></a><a class="chip-link" href="../nutrition-behaviour-change/index.html">Approach<svg class="arr arr-right" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 6h8M7 3l3 3-3 3"></path></svg></a></div></div></div></section>
 </main>
