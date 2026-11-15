@@ -20,3 +20,10 @@ Static site on GitHub Pages (served from `main`). Self-contained HTML, no build 
 - Juliana’s title is **Nutrition Counsellor** (Canadian spelling), not Nutritionist.
 - Plain, natural wording. Canadian spelling. Never name, suggest or imply a diagnosis or condition.
 - Every page keeps `<meta name="robots" content="noindex, nofollow">`.
+
+## Worth Digesting, myths and seasonal panel
+
+- Articles live in `tools/worth-digesting/articles.py` (newest edition first). Every claim must come from a linked credible source (Health Canada, Canada’s Food Guide, NIH, CCSA, Foodland Ontario).
+- `python3 tools/worth-digesting/build.py` rebuilds `worth-digesting/index.html`; `python3 tools/worth-digesting/digest_extras.py` rebuilds the myth cards, seasonal panel and "This month’s reads" on the Digest page.
+- Add each new article to `search-index.js`.
+

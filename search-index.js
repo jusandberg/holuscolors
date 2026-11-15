@@ -51,6 +51,94 @@
       keywords: ['nutrition education', 'nutrients', 'macronutrients', 'micronutrients', 'food sources', 'vitamins', 'minerals']
     },
     {
+      id: 'page-worth-digesting',
+      type: 'Page',
+      title: 'Worth Digesting',
+      summary: 'Monthly, science-backed nutrition reads in plain language, with links to every source.',
+      url: '/worth-digesting/',
+      keywords: ['articles', 'monthly', 'research', 'science', 'newsletter', 'reads']
+    },
+    {
+      id: 'digest-myths',
+      type: 'Page',
+      title: 'Myth or fact? Things you’ve probably heard',
+      summary: 'Common nutrition myths checked against Health Canada, Canada’s Food Guide and NIH sources.',
+      url: '/digest/#mf-title',
+      keywords: ['myths', 'detox', 'cleanse', 'frozen vegetables', 'honey', 'maple syrup', 'protein', 'sports drinks', 'whole wheat']
+    },
+    {
+      id: 'digest-season',
+      type: 'Page',
+      title: 'In season in Ontario',
+      summary: 'Local Ontario produce by month, with one simple idea for each.',
+      url: '/digest/#ss-title',
+      keywords: ['seasonal', 'local', 'Ontario', 'farmers market', 'produce', 'in season']
+    },
+    {
+      id: 'wd-vitamin-c-colds',
+      type: 'Article',
+      title: 'Vitamin C and colds: what it can and can’t do',
+      summary: 'Regular vitamin C won’t stop most people catching a cold, and starting it once you’re sick doesn’t seem to help.',
+      url: '/worth-digesting/#vitamin-c-colds',
+      keywords: ['November 2026', 'Worth Digesting']
+    },
+    {
+      id: 'wd-alcohol-guidance',
+      type: 'Article',
+      title: 'Holiday drinks: what Canada’s alcohol guidance says',
+      summary: 'Less is better. Two drinks or fewer a week is the low-risk range, and that’s a ceiling, not a target.',
+      url: '/worth-digesting/#alcohol-guidance',
+      keywords: ['November 2026', 'Worth Digesting']
+    },
+    {
+      id: 'wd-vitamin-d-winter',
+      type: 'Article',
+      title: 'Vitamin D through a Canadian winter',
+      summary: 'Vitamin D is in very few foods. Health Canada suggests food sources or a daily 400 IU supplement.',
+      url: '/worth-digesting/#vitamin-d-winter',
+      keywords: ['October 2026', 'Worth Digesting']
+    },
+    {
+      id: 'wd-orange-vegetables',
+      type: 'Article',
+      title: 'Squash, carrots and sweet potatoes: your vitamin A season',
+      summary: 'Orange vegetables are rich in beta-carotene, which your body turns into vitamin A as it needs it.',
+      url: '/worth-digesting/#orange-vegetables',
+      keywords: ['October 2026', 'Worth Digesting']
+    },
+    {
+      id: 'wd-packed-lunches',
+      type: 'Article',
+      title: 'Packed lunches: build them like a plate',
+      summary: 'Half vegetables and fruits, a quarter whole grains, a quarter protein, plus water and an ice pack.',
+      url: '/worth-digesting/#packed-lunches',
+      keywords: ['September 2026', 'Worth Digesting']
+    },
+    {
+      id: 'wd-fibre-go-slow',
+      type: 'Article',
+      title: 'More fibre, less discomfort: go slow',
+      summary: 'Most Canadians get about half the fibre they need. Add it a little at a time, with plenty of fluids.',
+      url: '/worth-digesting/#fibre-go-slow',
+      keywords: ['September 2026', 'Worth Digesting']
+    },
+    {
+      id: 'wd-water-in-the-heat',
+      type: 'Article',
+      title: 'Water in the heat: drink before you’re thirsty',
+      summary: 'Thirst is a late signal. In hot weather, drink water early and often, and skip the sports drinks.',
+      url: '/worth-digesting/#water-in-the-heat',
+      keywords: ['August 2026', 'Worth Digesting']
+    },
+    {
+      id: 'wd-summer-food-safety',
+      type: 'Article',
+      title: 'Picnics and barbecues: keep cold food cold',
+      summary: 'Bacteria grow fastest between 4°C and 60°C. Use a cooler, an ice pack and a thermometer.',
+      url: '/worth-digesting/#summer-food-safety',
+      keywords: ['August 2026', 'Worth Digesting']
+    },
+    {
       id: 'page-faq',
       type: 'Page',
       title: 'Frequently asked questions',
