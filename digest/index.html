@@ -225,8 +225,10 @@ function render(){var per=G.map(function(){return 0});
 root.querySelectorAll('.rb-food').forEach(function(b){b.addEventListener('click',function(){var k=b.dataset.g+'|'+b.dataset.i;if(on[k]){delete on[k];last=null;}else{on[k]=1;last=k;}render();})});
 root.querySelector('.rb-reset').addEventListener('click',function(){on={};last=null;render();});
 render();})();</script></section>
+
 <!-- digest-extras --><style>
 .dx.section-pad{padding-block:clamp(1.5rem,3vw,2.5rem)}
+.rb.section-pad:has(+ .dx),section.section-pad:has(+ .dx){padding-bottom:clamp(1rem,2vw,1.5rem)}
 .dx .section-shell{max-width:62rem}
 .mf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:.75rem;margin-top:1.2rem}
 .mf{position:relative;min-height:12.5rem;perspective:900px;border:0;padding:0;background:none;text-align:left;cursor:pointer;font:inherit;color:inherit}

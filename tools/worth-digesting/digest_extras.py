@@ -21,6 +21,7 @@ for m in SEASON.values():
 MN={8:'August',9:'September',10:'October',11:'November'}
 css='''<style>
 .dx.section-pad{padding-block:clamp(1.5rem,3vw,2.5rem)}
+.rb.section-pad:has(+ .dx),section.section-pad:has(+ .dx){padding-bottom:clamp(1rem,2vw,1.5rem)}
 .dx .section-shell{max-width:62rem}
 .mf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:.75rem;margin-top:1.2rem}
 .mf{position:relative;min-height:12.5rem;perspective:900px;border:0;padding:0;background:none;text-align:left;cursor:pointer;font:inherit;color:inherit}
