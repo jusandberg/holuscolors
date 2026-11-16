@@ -137,8 +137,8 @@ window.holusAnimateVenn(document);
   io.observe(network);
 })();
 
-// Guided general-enquiry form. The form remains safely hidden until a valid
-// Formspree ID is configured in brand-config.js. Local preview mode is visual
+// Guided general-enquiry form. The form remains safely hidden until a Google
+// Apps Script web app URL (or a Formspree ID) is configured in brand-config.js. Local preview mode is visual
 // only and never transmits what is typed.
 (function () {
   const form = document.querySelector('[data-enquiry-form]');
@@ -153,7 +153,9 @@ window.holusAnimateVenn(document);
   const counter = form.querySelector('[data-message-count]');
   const topic = form.querySelector('select[name="topic"]');
   const formId = String(window.CONTACT?.formspreeId || '').trim();
-  const isConfigured = /^[a-z0-9_-]{6,}$/i.test(formId);
+  const scriptUrl = String(window.CONTACT?.appsScriptUrl || '').trim();
+  const useScript = /^https:\/\/script\.google\.com\/macros\/s\/[\w-]+\/exec$/.test(scriptUrl);
+  const isConfigured = useScript || /^[a-z0-9_-]{6,}$/i.test(formId);
   const isLocal = ['127.0.0.1', 'localhost'].includes(window.location.hostname);
   const isPreview = isLocal && new URLSearchParams(window.location.search).get('preview') === 'form';
 
@@ -161,7 +163,8 @@ window.holusAnimateVenn(document);
 
   fallback?.setAttribute('hidden', '');
   form.removeAttribute('hidden');
-  if (isConfigured) form.action = `https://formspree.io/f/${formId}`;
+  if (useScript) form.action = scriptUrl;
+  else if (isConfigured) form.action = `https://formspree.io/f/${formId}`;
 
   const allowedTopics = new Set([...topic.options].map((option) => option.value).filter(Boolean));
   const requestedTopic = new URLSearchParams(window.location.search).get('topic');
@@ -198,13 +201,16 @@ window.holusAnimateVenn(document);
     }
 
     try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' }
-      });
+      const response = useScript
+        // Plain form encoding keeps this a simple request that Apps Script accepts from another site.
+        ? await fetch(form.action, { method: 'POST', body: new URLSearchParams(new FormData(form)) })
+        : await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
 
       if (!response.ok) throw new Error(`Form submission failed with ${response.status}`);
+      if (useScript) {
+        const result = await response.json().catch(() => ({ ok: false }));
+        if (!result.ok) throw new Error(result.error || 'Form submission was not accepted');
+      }
 
       form.reset();
       updateCount();

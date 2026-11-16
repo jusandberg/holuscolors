@@ -22,6 +22,9 @@
   // Formspree setup: add only the public form ID (the part after /f/) once the
   // Hōlus form is created. Never put a password or private API key here.
   const CONTACT = Object.freeze({
+    // Google Apps Script web app URL (see tools/contact-form/SETUP.md), e.g.
+    // 'https://script.google.com/macros/s/XXXX/exec'. Leave null to hide the form.
+    appsScriptUrl: null,
     formspreeId: null,
     replyEmail: 'hello@holus.ca'
   });
