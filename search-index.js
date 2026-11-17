@@ -59,14 +59,6 @@
       keywords: ['articles', 'monthly', 'research', 'science', 'newsletter', 'reads']
     },
     {
-      id: 'digest-myths',
-      type: 'Page',
-      title: 'Myth or fact? Things you’ve probably heard',
-      summary: 'Common nutrition myths checked against Health Canada, Canada’s Food Guide and NIH sources.',
-      url: '/digest/#mf-title',
-      keywords: ['myths', 'detox', 'cleanse', 'frozen vegetables', 'honey', 'maple syrup', 'protein', 'sports drinks', 'whole wheat']
-    },
-    {
       id: 'digest-season',
       type: 'Page',
       title: 'In season in Ontario',

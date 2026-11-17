@@ -72,7 +72,7 @@ var tabs=document.querySelectorAll('.ss-tabs button'),grids=document.querySelect
 function show(m){tabs.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.m==m))});grids.forEach(function(g){g.hidden=g.dataset.m!=m})}
 tabs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.m)})});
 var now=new Date().getMonth()+1,ms=[].map.call(tabs,function(b){return +b.dataset.m}),pick=ms.indexOf(now)>-1?now:(now<ms[0]?ms[0]:ms[ms.length-1]);show(pick);})();</script>'''
-block='<!-- digest-extras -->'+css+myths+ss+wdt+js+'<!-- /digest-extras -->'
+block='<!-- digest-extras -->'+css+ss+wdt+js+'<!-- /digest-extras -->'  # myth tiles removed Nov 2026
 p=R+'digest/index.html'; t=open(p).read()
 t=re.sub(r'<!-- digest-extras -->.*?<!-- /digest-extras -->','',t,flags=re.S)
 k='<section class="next-step"'; assert t.count(k)==1
