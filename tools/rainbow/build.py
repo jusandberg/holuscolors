@@ -36,7 +36,6 @@ BANDS = [
 ]
 
 RESEARCH = [
-    ('Vegetables, fruit and heart health: Health Canada, ', 'https://www.canada.ca/en/health-canada/services/publications/food-nutrition/summary-health-canada-assessment-health-claim-about-vegetables-fruit-heart-disease.html', 'Summary of Health Canada’s assessment of a health claim about vegetables and fruit and heart disease', ''),
     ('Eating by colour: Minich, ', 'http://dx.doi.org/10.1155/2019/2125070', 'A review of the science of colourful, plant-based food and “eating the rainbow”', ', Journal of Nutrition and Metabolism, 2019.'),
     ('Anthocyanins and heart health: Xu and others, ', 'https://www.frontiersin.org/articles/10.3389/fnut.2021.747884/full', 'Anthocyanins, anthocyanin-rich berries and cardiovascular risks', ' (44 trials and 15 cohort studies), Frontiers in Nutrition, 2021.'),
     ('Anthocyanins and gut bacteria: ', 'https://www.tandfonline.com/doi/full/10.1080/10408398.2023.2187212', 'Anthocyanins–gut microbiota–health axis: a review', ', Critical Reviews in Food Science and Nutrition, 2023.'),
@@ -90,22 +89,20 @@ SECTION = '''<section class="rb section-pad" aria-labelledby="rb-title"><style>
 @media(prefers-reduced-motion:reduce){.rbw .fill,.rbw .food image{transition:none}}
 </style><div class="section-shell">
 <header class="nutri-head"><p class="eyebrow">Try it</p><h2 id="rb-title" style="margin:.7rem 0 .6rem;font-size:clamp(2.1rem,5vw,3.2rem);line-height:1;letter-spacing:-.05em">Eating a rainbow.</h2><p>Tap the foods you’ve had this week.</p></header>
-<div class="rbw"><div><svg viewBox="0 0 400 240" role="group" aria-label="Foods on a rainbow, by colour"></svg><p class="rb-msg" aria-live="polite" data-rb-msg>Tap the foods you’ve had this week.</p></div>
+<div class="rbw"><div><svg viewBox="0 0 400 240" role="group" aria-label="Foods on a rainbow, by colour"></svg></div>
 <div><div class="rb-card" aria-live="polite" data-rb-card><p class="rb-hint">Tap a food on the rainbow to see what its colour brings and what it’s linked with.</p></div><button type="button" class="rb-reset" data-rb-reset hidden>Start over</button></div></div>
-<p class="rb-why"><b>Why it matters:</b> Health Canada found enough evidence to support the claim that eating vegetables and fruit helps reduce the risk of heart disease. Each colour brings different compounds, so a mix of colours gives you more of them.</p>
-<p class="nutri-note">Phytochemicals are compounds plants make for colour, flavour and protection. Most polyphenols aren’t absorbed in the small intestine; they reach your colon, where gut bacteria break them down. Nothing you tap is saved.</p>
+<p class="rb-why">Phytochemicals are compounds plants make for colour, flavour and protection. Each colour brings different ones, so a mix of colours gives you more of them.</p>
 <details class="rb-research"><summary>The research behind this</summary><ul>__RESEARCH__</ul></details>
 </div><script>(function(){
 var root=document.querySelector('.rb');if(!root)return;var IMG='../assets/illustrations/',B=__BANDS__;
 var NS='http://www.w3.org/2000/svg',CX=200,CY=210,R=[185,157,129,101,73],W=22,GREY='#ecebe7';
-var svg=root.querySelector('.rbw svg'),card=root.querySelector('[data-rb-card]'),msg=root.querySelector('[data-rb-msg]'),rs=root.querySelector('[data-rb-reset]');
+var svg=root.querySelector('.rbw svg'),card=root.querySelector('[data-rb-card]'),rs=root.querySelector('[data-rb-reset]');
 var hint=card.innerHTML,have=B.map(function(){return [0,0,0]}),fills=[],foods=[];
 function pt(r,d){var a=d*Math.PI/180;return [CX-r*Math.cos(a),CY-r*Math.sin(a)]}
 function arc(r){var p=pt(r,0),q=pt(r,180);return 'M'+p[0]+' '+p[1]+' A'+r+' '+r+' 0 0 1 '+q[0]+' '+q[1]}
 function el(t,a){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);return e}
 function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
 B.forEach(function(b,i){svg.appendChild(el('path',{d:arc(R[i]),'class':'band',stroke:GREY,'stroke-width':W}));var f=el('path',{d:arc(R[i]),'class':'fill',stroke:b[1],'stroke-width':W,pathLength:3,'stroke-dasharray':'0 3'});svg.appendChild(f);fills.push(f)});
-var c=el('text',{x:CX,y:CY-6,'text-anchor':'middle','class':'ctr'});c.textContent='0/5';var cs=el('text',{x:CX,y:CY+12,'text-anchor':'middle','class':'ctrs'});cs.textContent='COLOURS';svg.appendChild(c);svg.appendChild(cs);
 B.forEach(function(b,i){var off=[-18,0,18,-18,12][i];[34,90,146].forEach(function(a,j){var fd=b[4][j],p=pt(R[i],a+off),sz=36;
  var g=el('g',{'class':'food off',tabindex:0,role:'button','aria-pressed':'false','aria-label':fd[0]+', '+b[0]});
  g.appendChild(el('circle',{cx:p[0],cy:p[1],r:23,fill:'transparent','class':'hit'}));
@@ -114,8 +111,7 @@ B.forEach(function(b,i){var off=[-18,0,18,-18,12][i];[34,90,146].forEach(functio
  function go(){have[i][j]=have[i][j]?0:1;g.classList.toggle('off',!have[i][j]);g.setAttribute('aria-pressed',String(!!have[i][j]));var k=have[i].reduce(function(x,y){return x+y});fills[i].setAttribute('stroke-dasharray',k+' 3');fills[i].style.visibility=k?'visible':'hidden';
   card.innerHTML='<div class="rb-food"><img src="'+IMG+fd[1]+'.svg" alt=""><div><b style="color:'+b[1]+'">'+esc(fd[0])+' · '+esc(b[0])+'</b><p class="rb-cmp">'+esc(b[2])+'</p></div></div><p class="rb-fact">'+esc(fd[2])+'</p><p class="rb-ben"><span>Linked with</span>'+esc(b[3])+'</p>';upd()}
  g.addEventListener('click',go);g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})});
-function upd(){var n=have.filter(function(h){return h.some(Boolean)}).length,t=have.reduce(function(x,h){return x+h[0]+h[1]+h[2]},0);c.textContent=n+'/5';
- msg.textContent=t?(n===5?'A full rainbow! '+t+' foods this week.':t+(t===1?' food':' foods')+', '+n+(n===1?' colour':' colours')+'. Keep going.'):'Tap the foods you’ve had this week.';rs.hidden=!t}
+function upd(){var t=have.reduce(function(x,h){return x+h[0]+h[1]+h[2]},0);rs.hidden=!t}
 rs.addEventListener('click',function(){have=B.map(function(){return [0,0,0]});fills.forEach(function(f){f.setAttribute('stroke-dasharray','0 3');f.style.visibility='hidden'});foods.forEach(function(g){g.classList.add('off');g.setAttribute('aria-pressed','false')});card.innerHTML=hint;upd()});
 })();</script></section>'''
 

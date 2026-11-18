@@ -11,14 +11,22 @@ MYTHS=[
  ("“Whole wheat” means whole grain.","Not always. Look for “whole grain” followed by the grain’s name near the top of the ingredient list.","Canada’s Food Guide","https://food-guide.canada.ca/en/healthy-eating-recommendations/make-it-a-habit-to-eat-vegetables-fruit-whole-grains-and-protein-foods/eat-whole-grain-foods/"),
 ]
 SEASON={ # Foodland Ontario availability guide; one idea each
+ 1:[("Apples","fruit-apple","Bake with cinnamon and oats on top."),("Pears","fruit-pear","Slice into oatmeal or a salad."),("Winter squash","food-pumpkin","Roast cubes for soups and bowls."),("Beets","veg-beet","Roast whole, then slice into salads."),("Sweet potatoes","veg-sweet-potato","Bake and top with black beans."),("Mushrooms","veg-mushroom","Sauté into eggs or pasta.")],
+ 2:[("Apples","fruit-apple","Simmer into a quick, no-sugar sauce."),("Pears","fruit-pear","Poach and serve with yogurt."),("Carrots","veg-carrot-orange","Roast with a little oil and thyme."),("Cabbage","food-cabbage","Shred into a fast slaw or stir-fry."),("Potatoes","veg-potato","Roast with the skins on for more fibre."),("Greenhouse cucumbers","veg-cucumber","Slice into wraps or snack plates.")],
+ 3:[("Apples","fruit-apple","Pair with a spoon of nut butter."),("Carrots","veg-carrot-orange","Grate into muffins or slaw."),("Beets","veg-beet","Blend into a bright, earthy soup."),("Onions","veg-onion","Caramelize slowly for soups and toast."),("Greenhouse peppers","veg-pepper","Slice for dipping in hummus."),("Mushrooms","veg-mushroom","Roast with garlic for a side.")],
+ 4:[("Apples","fruit-apple","Chop into overnight oats."),("Greenhouse tomatoes","veg-tomato","Toss with beans and herbs."),("Greenhouse lettuce","food-lettuce","Build a big lunch salad."),("Potatoes","veg-potato","Make a quick potato and egg hash."),("Garlic","veg-garlic","Crush into dressings and sauces."),("Mushrooms","veg-mushroom","Add to soups for a savoury depth.")],
+ 5:[("Asparagus","veg-asparagus","Roast or grill, then squeeze on lemon."),("Greenhouse tomatoes","veg-tomato","Slice onto whole grain toast."),("Greenhouse cucumbers","veg-cucumber","Mix with yogurt and dill."),("Greenhouse lettuce","food-lettuce","Use leaves as wraps."),("Apples","fruit-apple","Slice into a crunchy salad."),("Mushrooms","veg-mushroom","Grill large caps as a burger.")],
+ 6:[("Strawberries","fruit-strawberry","Top yogurt, oats or a spinach salad."),("Asparagus","veg-asparagus","Chop into an omelette or pasta."),("Greenhouse peppers","veg-pepper","Grill alongside fish or tofu."),("Greenhouse lettuce","food-lettuce","Pair with strawberries and walnuts."),("Apples","fruit-apple","Pack sliced for a snack."),("Garlic","veg-garlic","Roast whole for a mellow spread.")],
+ 7:[("Cherries","fruit-cherries","Pit and freeze for smoothies."),("Blueberries","fruit-blueberries","Stir into oats or yogurt."),("Greenhouse tomatoes","veg-tomato","Make a fresh salsa."),("Greenhouse cucumbers","veg-cucumber","Slice into cold water with mint."),("Garlic","veg-garlic","Add to a summer bean salad."),("Potatoes","veg-potato","Make a herby potato salad.")],
  8:[("Peaches","fruit-peach","Slice onto yogurt or oats."),("Plums","fruit-plum","Halve and roast with cinnamon."),("Raspberries","fruit-raspberry","Freeze extras for winter oatmeal."),("Corn","veg-corn","Grill and toss into a bean salad."),("Field tomatoes","veg-tomato","Slice with basil and a pinch of salt."),("Zucchini","veg-zucchini","Grate into pasta sauce or muffins.")],
  9:[("Grapes","fruit-grapes","Freeze for a cold, sweet snack."),("Peaches","fruit-peach","Bake with a crumble of oats."),("Apples","fruit-apple","Pair with a spoon of nut butter."),("Broccoli","veg-broccoli","Roast until the edges crisp."),("Pumpkin","food-pumpkin","Roast the seeds for a crunchy snack."),("Spinach","veg-greens","Wilt into eggs or pasta.")],
  10:[("Apples","fruit-apple","Bake with cinnamon and oats on top."),("Pears","fruit-pear","Slice into a salad with walnuts."),("Grapes","fruit-grapes","Roast with chicken for a sweet-savoury tray."),("Pumpkin","food-pumpkin","Stir purée into chili or oatmeal."),("Cauliflower","veg-cauliflower","Roast whole or mash with potatoes."),("Kale","veg-kale","Massage with lemon for a quick salad.")],
  11:[("Apples","fruit-apple","Simmer into a quick, no-sugar sauce."),("Pears","fruit-pear","Poach and serve with yogurt."),("Carrots","veg-carrot-orange","Roast with a little oil and thyme."),("Sweet potatoes","veg-sweet-potato","Bake and top with black beans."),("Nappa cabbage","food-cabbage","Shred into a fast slaw or stir-fry."),("Kale","veg-kale","Add to soups in the last few minutes.")],
+ 12:[("Apples","fruit-apple","Bake with cinnamon for an easy dessert."),("Pears","fruit-pear","Slice onto a holiday cheese board."),("Winter squash","food-pumpkin","Stuff with grains and beans."),("Sweet potatoes","veg-sweet-potato","Mash with a little orange zest."),("Cabbage","food-cabbage","Braise slowly with apples."),("Carrots","veg-carrot-orange","Roast with a drizzle of maple.")],
 }
 for m in SEASON.values():
     for n,i,_ in m: assert os.path.exists(R+'assets/illustrations/'+i+'.svg'),i
-MN={8:'August',9:'September',10:'October',11:'November'}
+MN={1:'January',2:'February',3:'March',4:'April',5:'May',6:'June',7:'July',8:'August',9:'September',10:'October',11:'November',12:'December'}
 css='''<style>
 .dx.section-pad{padding-block:clamp(1.5rem,3vw,2.5rem)}
 .rb.section-pad{padding-bottom:clamp(.5rem,1.5vw,1rem)}
@@ -35,7 +43,7 @@ css='''<style>
 .mf-b b{font:800 .95rem Manrope,sans-serif;color:#c7d2c4}
 .mf-b p{margin:.35rem 0 0;font-size:.88rem;line-height:1.45;color:rgba(255,255,255,.88)}
 .mf-b a{font:700 .74rem Manrope,sans-serif;color:#c7b07a;text-underline-offset:.2rem}
-.ss-tabs{display:inline-flex;gap:.25rem;padding:.25rem;margin:1rem 0 1.1rem;border-radius:999px;background:var(--mist)}
+.ss-tabs{display:flex;width:max-content;max-width:100%;gap:.15rem;padding:.25rem;margin:1rem 0 1.1rem;border-radius:999px;background:var(--mist);overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.ss-tabs::-webkit-scrollbar{display:none}.ss-tabs button{flex:none}
 .ss-tabs button{padding:.45rem 1rem;border:0;border-radius:999px;background:none;color:var(--ink);font:700 .88rem Manrope,sans-serif;cursor:pointer}
 .ss-tabs button[aria-pressed="true"]{background:var(--ink);color:#fff}
 .ss-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(9.5rem,1fr));gap:.7rem}
@@ -69,7 +77,7 @@ wdt+=''.join(f'<a class="wdt" href="../worth-digesting/index.html#{a["id"]}"><im
 wdt+='</div><a class="wdt-all" href="../worth-digesting/index.html">All editions →</a></div></section>'
 js='''<script>(function(){document.querySelectorAll('.mf').forEach(function(c){c.addEventListener('click',function(ev){if(ev.target.closest('a'))return;c.setAttribute('aria-pressed',String(c.getAttribute('aria-pressed')!=='true'))})});
 var tabs=document.querySelectorAll('.ss-tabs button'),grids=document.querySelectorAll('.ss-grid');if(!tabs.length)return;
-function show(m){tabs.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.m==m))});grids.forEach(function(g){g.hidden=g.dataset.m!=m})}
+function show(m){tabs.forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.m==m));if(b.dataset.m==m){var r=b.parentNode;r.scrollLeft=b.offsetLeft-r.clientWidth/2+b.offsetWidth/2}});grids.forEach(function(g){g.hidden=g.dataset.m!=m})}
 tabs.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.m)})});
 var now=new Date().getMonth()+1,ms=[].map.call(tabs,function(b){return +b.dataset.m}),pick=ms.indexOf(now)>-1?now:(now<ms[0]?ms[0]:ms[ms.length-1]);show(pick);})();</script>'''
 block='<!-- digest-extras -->'+css+ss+wdt+js+'<!-- /digest-extras -->'  # myth tiles removed Nov 2026
