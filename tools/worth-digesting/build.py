@@ -11,7 +11,7 @@ for icon in {a['icon'] for e in EDITIONS for a in e[4]}:
 e=html.escape
 css='''<style>
 .wd .section-shell{max-width:58rem}
-.wd-tabs{display:inline-flex;flex-wrap:wrap;gap:.25rem;padding:.25rem;margin:1.4rem 0 1.6rem;border-radius:999px;background:var(--mist)}
+.wd-tabs{display:flex;width:max-content;max-width:100%;gap:.15rem;padding:.25rem;margin:1.4rem 0 1.6rem;border-radius:999px;background:var(--mist);overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.wd-tabs::-webkit-scrollbar{display:none}.wd-tabs button{flex:none}
 .wd-tabs button{padding:.5rem 1.1rem;border:0;border-radius:999px;background:none;color:var(--ink);font:700 .9rem Manrope,sans-serif;cursor:pointer}
 .wd-tabs button[aria-pressed="true"]{background:var(--ink);color:#fff}
 .wd-ed[hidden]{display:none}
@@ -36,7 +36,7 @@ css='''<style>
 .wd-share{justify-self:start;padding:.4rem .85rem;border:1px solid var(--line);border-radius:999px;background:#fff;font:700 .78rem Manrope,sans-serif;color:var(--ink);cursor:pointer}
 @media(max-width:600px){.wd-art summary{grid-template-columns:auto 1fr}.wd-art summary .wd-go{display:none}.wd-art summary img{width:2.8rem}}
 </style>'''
-tabs=''.join(f'<button type="button" data-ed="{k}" aria-pressed="{str(i==0).lower()}">{e(lbl.split()[0][:3])}</button>' for i,(k,lbl,_,_,_) in enumerate(EDITIONS))
+tabs=''.join(f'<button type="button" data-ed="{k}" aria-pressed="{str(i==0).lower()}">{e(lbl.split()[0][:3] + ('' if lbl.endswith('2026') else ' ’' + lbl[-2:]))}</button>' for i,(k,lbl,_,_,_) in enumerate(EDITIONS))
 eds=''
 for i,(k,lbl,theme,intro,arts) in enumerate(EDITIONS):
     eds+=f'<section class="wd-ed" id="{k}" data-ed="{k}"{"" if i==0 else " hidden"}><p class="eyebrow">{e(lbl)} edition</p><h2>{e(theme)}.</h2><p>{e(intro)}</p>'
@@ -51,7 +51,7 @@ for i,(k,lbl,theme,intro,arts) in enumerate(EDITIONS):
               f'<button type="button" class="wd-share" data-link="{a["id"]}">Copy link to this article</button></div></details>')
     eds+='</section>'
 js='''<script>(function(){var r=document.querySelector('.wd');if(!r)return;
-function show(k){r.querySelectorAll('.wd-ed').forEach(function(s){s.hidden=s.dataset.ed!==k});r.querySelectorAll('.wd-tabs button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.ed===k))});}
+function show(k){r.querySelectorAll('.wd-ed').forEach(function(s){s.hidden=s.dataset.ed!==k});r.querySelectorAll('.wd-tabs button').forEach(function(b){var on=b.dataset.ed===k;b.setAttribute('aria-pressed',String(on));if(on){var w=b.parentNode;w.scrollLeft=b.offsetLeft-w.clientWidth/2+b.offsetWidth/2}});}
 r.querySelectorAll('.wd-tabs button').forEach(function(b){b.addEventListener('click',function(){show(b.dataset.ed)})});
 function route(){var h=location.hash.slice(1);if(!h)return;var t=document.getElementById(h);if(!t)return;var ed=t.closest('.wd-ed');if(ed)show(ed.dataset.ed);if(t.tagName==='DETAILS'){t.open=true;setTimeout(function(){t.scrollIntoView({block:'start'})},60);}}
 route();window.addEventListener('hashchange',route);

@@ -122,3 +122,8 @@ EDITIONS = [
             ("General food safety tips, Government of Canada","https://www.canada.ca/en/public-health/services/food-safety/general-food-safety-tips.html")]),
  ]),
 ]
+
+# December 2025 to July 2026 editions live in new_editions.py
+import os as _os
+exec(open(_os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'new_editions.py')).read())
+EDITIONS = EDITIONS + NEW_EDITIONS

@@ -51,6 +51,134 @@
       keywords: ['nutrition education', 'nutrients', 'macronutrients', 'micronutrients', 'food sources', 'vitamins', 'minerals']
     },
     {
+      id: "wd-late-eating",
+      type: 'Article',
+      title: "Eating late: what a tightly controlled study found",
+      summary: "The same meals eaten about four hours later left people hungrier and burning slightly less energy.",
+      url: "/worth-digesting/#late-eating",
+      keywords: ["July 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-time-restricted-eating",
+      type: 'Article',
+      title: "Time-restricted eating: is the clock the trick?",
+      summary: "Eating within a shorter daily window works mostly because people end up eating less, not because of the clock itself.",
+      url: "/worth-digesting/#time-restricted-eating",
+      keywords: ["July 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-flavonoids-ageing",
+      type: 'Article',
+      title: "Berries, tea and apples: flavonoids and healthy ageing",
+      summary: "In a 2025 study of 86,000 older adults, people who ate more flavonoid-rich foods had a lower risk of frailty and poor mental health.",
+      url: "/worth-digesting/#flavonoids-ageing",
+      keywords: ["June 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-dark-chocolate",
+      type: 'Article',
+      title: "Dark chocolate vs milk chocolate",
+      summary: "In a 2024 BMJ study, dark chocolate was linked with a lower risk of type 2 diabetes. Milk chocolate wasn’t, and was linked with weight gain.",
+      url: "/worth-digesting/#dark-chocolate",
+      keywords: ["June 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-creatine-brain",
+      type: 'Article',
+      title: "Creatine: not just for the gym",
+      summary: "A 2024 review of 16 trials found creatine gave a small boost to memory in adults.",
+      url: "/worth-digesting/#creatine-brain",
+      keywords: ["May 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-omega3-ageing",
+      type: 'Article',
+      title: "Omega-3s and the pace of ageing",
+      summary: "In a 3-year trial, older adults taking omega-3s aged a few months more slowly by biological measures.",
+      url: "/worth-digesting/#omega3-ageing",
+      keywords: ["May 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-fermented-foods",
+      type: 'Article',
+      title: "Fermented foods and your gut",
+      summary: "In a Stanford trial, eating more fermented foods increased gut bacteria variety and lowered markers of inflammation.",
+      url: "/worth-digesting/#fermented-foods",
+      keywords: ["April 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-sweeteners",
+      type: 'Article',
+      title: "Sugar substitutes: what the WHO advises",
+      summary: "The World Health Organization advises against using non-sugar sweeteners to control weight. Experts still debate the evidence.",
+      url: "/worth-digesting/#sweeteners",
+      keywords: ["April 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-ultra-processed",
+      type: 'Article',
+      title: "Ultra-processed foods: what the biggest review found",
+      summary: "A 2024 BMJ review of studies covering nearly 10 million people linked eating more ultra-processed foods with 32 poorer health outcomes.",
+      url: "/worth-digesting/#ultra-processed",
+      keywords: ["March 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-plant-protein",
+      type: 'Article',
+      title: "Plant protein in midlife and healthy ageing",
+      summary: "In a 30-year study of 48,000 women, eating more plant protein in midlife was linked with higher odds of ageing healthily.",
+      url: "/worth-digesting/#plant-protein",
+      keywords: ["March 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-coffee-timing",
+      type: 'Article',
+      title: "Coffee: when you drink it may matter",
+      summary: "In a 2025 study, morning coffee drinkers had lower risk of death, especially from heart disease. All-day drinkers didn’t.",
+      url: "/worth-digesting/#coffee-timing",
+      keywords: ["February 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-mediterranean-women",
+      type: 'Article',
+      title: "The Mediterranean pattern and women’s heart health",
+      summary: "In a 25-year study of 25,000 women, eating Mediterranean-style was linked with up to 23% lower risk of death.",
+      url: "/worth-digesting/#mediterranean-women",
+      keywords: ["February 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-front-of-package",
+      type: 'Article',
+      title: "The new “High in” symbol on food packages",
+      summary: "Since January 1, 2026, many packaged foods in Canada must show a magnifying-glass symbol if they’re high in saturated fat, sugars or sodium.",
+      url: "/worth-digesting/#front-of-package",
+      keywords: ["January 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-healthy-ageing-diet",
+      type: 'Article',
+      title: "The eating pattern most linked with ageing well",
+      summary: "A 30-year study of 105,000 people found healthy eating patterns were linked with much higher odds of healthy ageing.",
+      url: "/worth-digesting/#healthy-ageing-diet",
+      keywords: ["January 2026", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-olive-oil-brain",
+      type: 'Article',
+      title: "Olive oil and the brain",
+      summary: "In a 28-year study, people who used at least half a tablespoon of olive oil a day had a 28% lower risk of dying from dementia.",
+      url: "/worth-digesting/#olive-oil-brain",
+      keywords: ["December 2025", 'Worth Digesting', 'research']
+    },
+    {
+      id: "wd-early-peanut",
+      type: 'Article',
+      title: "Babies and peanuts: early introduction lasts",
+      summary: "Babies who ate peanut early were 71% less likely to have a peanut allergy at age 12, even if they didn’t eat it often later.",
+      url: "/worth-digesting/#early-peanut",
+      keywords: ["December 2025", 'Worth Digesting', 'research']
+    },
+    {
       id: 'page-worth-digesting',
       type: 'Page',
       title: 'Worth Digesting',
